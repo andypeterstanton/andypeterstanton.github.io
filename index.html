@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
+    /* =====================
+       Theme variables
+       ===================== */
     :root {
       --bg: #0f1115;
       --card: #161a22;
@@ -17,11 +20,15 @@
       --radius: 18px;
     }
 
+    /* Global reset / font */
     * {
       box-sizing: border-box;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
+    /* =====================
+       Page background
+       ===================== */
     body {
       margin: 0;
       height: 100vh;
@@ -39,7 +46,9 @@
       100% { background-position: 0% 50%; }
     }
 
-    /* Top links */
+    /* =====================
+       Top link menus
+       ===================== */
     .top-links {
       display: flex;
       justify-content: flex-end;
@@ -52,30 +61,17 @@
       position: relative;
     }
 
-    .menu:hover {
-      color: var(--text);
+    .menu-button {
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 14px;
+      cursor: pointer;
     }
 
-    .menu-button {
-  background: none;
-  border: none;
-  color: var(--muted);
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.menu-button:hover {
-  color: var(--text);
-}
-
-.dropdown {
-  display: none;
-}
-
-.menu.open .dropdown {
-  display: block;
-}
-
+    .menu-button:hover {
+      color: var(--text);
+    }
 
     .dropdown {
       position: absolute;
@@ -91,6 +87,10 @@
       z-index: 50;
     }
 
+    .menu.open .dropdown {
+      display: block;
+    }
+
     .dropdown a {
       display: block;
       padding: 10px 16px;
@@ -102,7 +102,9 @@
       background: rgba(138,180,248,0.15);
     }
 
-    /* Center */
+    /* =====================
+       Center content
+       ===================== */
     .center {
       flex: 1;
       display: flex;
@@ -126,7 +128,76 @@
       margin-top: 6px;
     }
 
-    /* Search */
+    /* =====================
+       Weather card
+       ===================== */
+    .weather {
+      position: absolute;
+      top: 28px;
+      left: 28px;
+      width: 300px;
+
+      display: flex;
+      flex-direction: column; /* key: stack current + hourly vertically */
+      gap: 14px;
+
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .weather-now {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .weather-now img {
+      width: 42px;
+      height: 42px;
+    }
+
+    .weather-temp {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .weather-desc {
+      text-transform: capitalize;
+    }
+
+    /* Hourly forecast row */
+    .weather-hourly {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding-top: 6px;
+    }
+
+    .hour {
+      text-align: center;
+      min-width: 36px;
+    }
+
+    .hour img {
+      width: 26px;
+      height: 26px;
+    }
+
+    .hour span {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* =====================
+       Search box
+       ===================== */
     .search-wrapper {
       position: relative;
       width: min(680px, 90%);
@@ -144,8 +215,9 @@
 
     .search-box:focus-within {
       border-color: var(--accent);
-      box-shadow: 0 0 0 1px var(--accent),
-                  0 25px 60px rgba(0,0,0,0.6);
+      box-shadow:
+        0 0 0 1px var(--accent),
+        0 25px 60px rgba(0,0,0,0.6);
     }
 
     .search-box input {
@@ -174,7 +246,7 @@
       color: var(--accent);
     }
 
-    /* Autocomplete */
+    /* Autocomplete dropdown */
     .autocomplete {
       position: absolute;
       top: calc(100% + 10px);
@@ -182,7 +254,6 @@
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 14px;
-      overflow: hidden;
       box-shadow: 0 25px 60px rgba(0,0,0,0.6);
       z-index: 20;
     }
@@ -206,6 +277,7 @@
 
 <body>
 
+  <!-- Top menus -->
   <div class="top-links">
     <div class="menu">
       <button class="menu-button">Google ▾</button>
@@ -229,6 +301,21 @@
     </div>
   </div>
 
+  <!-- Weather card -->
+  <div id="weather" class="weather">
+    <div class="weather-now">
+      <img id="weatherIcon" />
+      <div>
+        <div id="weatherTemp" class="weather-temp"></div>
+        <div id="weatherDesc" class="weather-desc"></div>
+      </div>
+    </div>
+
+    <!-- Hourly forecast injected here -->
+    <div id="hourly" class="weather-hourly"></div>
+  </div>
+
+  <!-- Center content -->
   <div class="center">
     <div id="clock" class="clock"></div>
 
@@ -249,17 +336,112 @@
   </div>
 
   <script>
-    /* Clock */
+    /* =====================
+       Clock
+       ===================== */
     function updateClock() {
       const now = new Date();
       const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-      const date = now.toLocaleDateString([], { weekday: "long", month: "long", day: "numeric" });
+      const date = now.toLocaleDateString([], {
+        weekday: "long",
+        month: "long",
+        day: "numeric"
+      });
       document.getElementById("clock").innerHTML = `${time}<span>${date}</span>`;
     }
+
     updateClock();
     setInterval(updateClock, 1000);
 
-    /* Search toggle */
+    /* =====================
+       Weather (Open-Meteo)
+       ===================== */
+    async function loadWeather() {
+      const lat = 52.71978;
+      const lon = -1.35687;
+
+      const res = await fetch(
+        `https://api.open-meteo.com/v1/forecast` +
+        `?latitude=${lat}&longitude=${lon}` +
+        `&current_weather=true` +
+        `&hourly=temperature_2m,weathercode` +
+        `&timezone=auto`
+      );
+
+      const data = await res.json();
+
+      /* Current weather */
+      document.getElementById("weatherTemp").textContent =
+        Math.round(data.current_weather.temperature) + "°C";
+
+      document.getElementById("weatherDesc").textContent =
+        weatherDescription(data.current_weather.weathercode);
+
+      document.getElementById("weatherIcon").src =
+        weatherIconUrl(data.current_weather.weathercode);
+
+      /* Hourly forecast: next 6 full hours */
+      const hourlyEl = document.getElementById("hourly");
+      hourlyEl.innerHTML = "";
+
+      const now = new Date();
+      const currentHour = now.toISOString().slice(0, 13);
+      const startIndex = data.hourly.time.findIndex(t =>
+        t.startsWith(currentHour)
+      );
+
+      for (let i = startIndex + 1; i <= startIndex + 6; i++) {
+        const hourTime = new Date(data.hourly.time[i]);
+        const label = hourTime.toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit"
+        });
+
+        const div = document.createElement("div");
+        div.className = "hour";
+        div.innerHTML = `
+          <span>${label}</span>
+          <img src="${weatherIconUrl(data.hourly.weathercode[i])}">
+          <strong>${Math.round(data.hourly.temperature_2m[i])}°</strong>
+        `;
+        hourlyEl.appendChild(div);
+      }
+    }
+
+    loadWeather();
+
+    /* Weather helpers */
+    function weatherIconUrl(code) {
+      if (code === 0) return "https://openweathermap.org/img/wn/01d.png";
+      if ([1, 2].includes(code)) return "https://openweathermap.org/img/wn/02d.png";
+      if (code === 3) return "https://openweathermap.org/img/wn/03d.png";
+      if (code >= 45 && code <= 48) return "https://openweathermap.org/img/wn/50d.png";
+      if (code >= 51 && code <= 67) return "https://openweathermap.org/img/wn/09d.png";
+      if (code >= 71 && code <= 77) return "https://openweathermap.org/img/wn/13d.png";
+      if (code >= 80 && code <= 82) return "https://openweathermap.org/img/wn/10d.png";
+      if (code >= 95) return "https://openweathermap.org/img/wn/11d.png";
+      return "https://openweathermap.org/img/wn/01d.png";
+    }
+
+    function weatherDescription(code) {
+      const map = {
+        0: "Clear",
+        1: "Mostly clear",
+        2: "Partly cloudy",
+        3: "Overcast",
+        45: "Fog",
+        51: "Light rain",
+        61: "Rain",
+        71: "Snow",
+        80: "Showers",
+        95: "Thunderstorm"
+      };
+      return map[code] || "Weather";
+    }
+
+    /* =====================
+       Search mode toggle
+       ===================== */
     let imageMode = false;
     const toggle = document.getElementById("searchToggle");
     const tbm = document.getElementById("tbm");
@@ -280,7 +462,9 @@
       }
     };
 
-    /* Autocomplete */
+    /* =====================
+       Autocomplete
+       ===================== */
     const box = document.getElementById("autocomplete");
     let activeIndex = -1;
 
@@ -339,28 +523,47 @@
       if (!box.contains(e.target) && e.target !== input) box.hidden = true;
     });
 
-    /* Dropdown menus */
-document.querySelectorAll(".menu-button").forEach(button => {
-  button.addEventListener("click", e => {
-    e.stopPropagation();
+    /* =====================
+       Dropdown menus
+       ===================== */
+    document.querySelectorAll(".menu-button").forEach(button => {
+      button.addEventListener("click", e => {
+        e.stopPropagation();
+        const menu = button.parentElement;
 
-    const menu = button.parentElement;
+        document.querySelectorAll(".menu").forEach(m => {
+          if (m !== menu) m.classList.remove("open");
+        });
 
-    // Close other menus
-    document.querySelectorAll(".menu").forEach(m => {
-      if (m !== menu) m.classList.remove("open");
+        menu.classList.toggle("open");
+      });
     });
 
-    // Toggle this one
-    menu.classList.toggle("open");
-  });
-});
+    document.addEventListener("click", () => {
+      document.querySelectorAll(".menu").forEach(m => m.classList.remove("open"));
+    });
 
-// Close menus when clicking elsewhere
-document.addEventListener("click", () => {
-  document.querySelectorAll(".menu").forEach(m => m.classList.remove("open"));
-});
+    /* =====================
+       Smart URL detection
+       ===================== */
+    document.getElementById("searchForm").addEventListener("submit", e => {
+      const value = input.value.trim();
 
+      const isURL =
+        value.includes(".") &&
+        !value.includes(" ") &&
+        !value.startsWith("?");
+
+      if (isURL) {
+        e.preventDefault();
+        const url =
+          value.startsWith("http://") || value.startsWith("https://")
+            ? value
+            : "https://" + value;
+
+        window.location.href = url;
+      }
+    });
   </script>
 </body>
 </html>
