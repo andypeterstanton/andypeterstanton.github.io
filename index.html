@@ -28,7 +28,6 @@
       color: var(--text);
       display: flex;
       flex-direction: column;
-
       background: linear-gradient(120deg, #0f1115, #151a25, #0f1115);
       background-size: 400% 400%;
       animation: gradientMove 20s ease infinite;
@@ -40,26 +39,70 @@
       100% { background-position: 0% 50%; }
     }
 
-    /* Top right links */
+    /* Top links */
     .top-links {
       display: flex;
       justify-content: flex-end;
       padding: 20px 28px;
-      gap: 18px;
+      gap: 24px;
       font-size: 14px;
     }
 
-    .top-links a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s ease;
+    .menu {
+      position: relative;
     }
 
-    .top-links a:hover {
+    .menu:hover {
       color: var(--text);
     }
 
-    /* Center container */
+    .menu-button {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  color: var(--text);
+}
+
+.dropdown {
+  display: none;
+}
+
+.menu.open .dropdown {
+  display: block;
+}
+
+
+    .dropdown {
+      position: absolute;
+      right: 0;
+      top: 120%;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      min-width: 190px;
+      padding: 6px 0;
+      display: none;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      z-index: 50;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px 16px;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .dropdown a:hover {
+      background: rgba(138,180,248,0.15);
+    }
+
+    /* Center */
     .center {
       flex: 1;
       display: flex;
@@ -72,9 +115,8 @@
     /* Clock */
     .clock {
       font-size: 48px;
-      font-weight: 500;
-      letter-spacing: -1px;
       text-align: center;
+      letter-spacing: -1px;
     }
 
     .clock span {
@@ -84,9 +126,13 @@
       margin-top: 6px;
     }
 
-    /* Search box */
-    .search-box {
+    /* Search */
+    .search-wrapper {
+      position: relative;
       width: min(680px, 90%);
+    }
+
+    .search-box {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
@@ -98,9 +144,8 @@
 
     .search-box:focus-within {
       border-color: var(--accent);
-      box-shadow:
-        0 0 0 1px var(--accent),
-        0 25px 60px rgba(0,0,0,0.6);
+      box-shadow: 0 0 0 1px var(--accent),
+                  0 25px 60px rgba(0,0,0,0.6);
     }
 
     .search-box input {
@@ -116,12 +161,24 @@
       color: var(--muted);
     }
 
-    /* Autocomplete (FIXED positioning) */
+    .toggle {
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      color: var(--muted);
+      margin-left: 10px;
+    }
+
+    .toggle:hover {
+      color: var(--accent);
+    }
+
+    /* Autocomplete */
     .autocomplete {
       position: absolute;
-      top: 100%;
-      margin-top: 10px;
-      width: min(680px, 90%);
+      top: calc(100% + 10px);
+      width: 100%;
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 14px;
@@ -133,12 +190,11 @@
     .autocomplete div {
       padding: 14px 20px;
       cursor: pointer;
-      font-size: 16px;
     }
 
     .autocomplete div:hover,
     .autocomplete .active {
-      background: rgba(138, 180, 248, 0.15);
+      background: rgba(138,180,248,0.15);
     }
 
     .hint {
@@ -149,28 +205,41 @@
 </head>
 
 <body>
+
   <div class="top-links">
-    <a href="https://mail.google.com">Gmail</a>
-    <a href="https://calendar.google.com">Calendar</a>
-    <a href="https://drive.google.com">Drive</a>
-    <a href="https://www.youtube.com">YouTube</a>
+    <div class="menu">
+      <button class="menu-button">Google ▾</button>
+      <div class="dropdown">
+        <a href="https://mail.google.com">Gmail</a>
+        <a href="https://www.youtube.com">YouTube</a>
+        <a href="https://photos.google.com">Photos</a>
+        <a href="https://drive.google.com">Drive</a>
+        <a href="https://calendar.google.com">Calendar</a>
+      </div>
+    </div>
+
+    <div class="menu">
+      <button class="menu-button">Other ▾</button>
+      <div class="dropdown">
+        <a href="https://www.ultimate-guitar.com">Ultimate Guitar</a>
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://github.com">GitHub</a>
+        <a href="https://reddit.com">Reddit</a>
+      </div>
+    </div>
   </div>
 
   <div class="center">
     <div id="clock" class="clock"></div>
 
-    <div style="position: relative; width: 100%; display: flex; justify-content: center;">
-      <form class="search-box"
+    <div class="search-wrapper">
+      <form id="searchForm" class="search-box"
             action="https://www.google.com/search"
             method="GET"
             autocomplete="off">
-        <input
-          id="searchInput"
-          type="text"
-          name="q"
-          autofocus
-          placeholder="Search Google…"
-        />
+        <input id="searchInput" name="q" autofocus placeholder="Search Google…" />
+        <button type="button" id="searchToggle" class="toggle">🔍</button>
+        <input type="hidden" id="tbm">
       </form>
 
       <div id="autocomplete" class="autocomplete" hidden></div>
@@ -183,29 +252,39 @@
     /* Clock */
     function updateClock() {
       const now = new Date();
-      const time = now.toLocaleTimeString([], {
-        hour: "2-digit",
-        minute: "2-digit"
-      });
-      const date = now.toLocaleDateString([], {
-        weekday: "long",
-        month: "long",
-        day: "numeric"
-      });
-
-      document.getElementById("clock").innerHTML =
-        `${time}<span>${date}</span>`;
+      const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+      const date = now.toLocaleDateString([], { weekday: "long", month: "long", day: "numeric" });
+      document.getElementById("clock").innerHTML = `${time}<span>${date}</span>`;
     }
-
     updateClock();
     setInterval(updateClock, 1000);
 
-    /* Autocomplete */
+    /* Search toggle */
+    let imageMode = false;
+    const toggle = document.getElementById("searchToggle");
+    const tbm = document.getElementById("tbm");
     const input = document.getElementById("searchInput");
+
+    toggle.onclick = () => {
+      imageMode = !imageMode;
+      if (imageMode) {
+        tbm.name = "tbm";
+        tbm.value = "isch";
+        toggle.textContent = "🖼️";
+        input.placeholder = "Search Google Images…";
+      } else {
+        tbm.name = "";
+        tbm.value = "";
+        toggle.textContent = "🔍";
+        input.placeholder = "Search Google…";
+      }
+    };
+
+    /* Autocomplete */
     const box = document.getElementById("autocomplete");
     let activeIndex = -1;
 
-    window.googleCallback = function (data) {
+    window.googleCallback = data => {
       const suggestions = data[1].slice(0, 8);
       box.innerHTML = "";
       activeIndex = -1;
@@ -220,26 +299,22 @@
         box.appendChild(div);
       });
 
-      box.hidden = suggestions.length === 0;
+      box.hidden = !suggestions.length;
     };
 
     input.addEventListener("input", () => {
-      const query = input.value.trim();
-      if (!query) {
+      if (!input.value.trim()) {
         box.hidden = true;
         return;
       }
 
-      const old = document.getElementById("jsonp");
-      if (old) old.remove();
-
+      document.getElementById("jsonp")?.remove();
       const script = document.createElement("script");
       script.id = "jsonp";
       script.src =
         "https://suggestqueries.google.com/complete/search" +
-        "?client=firefox&q=" + encodeURIComponent(query) +
+        "?client=firefox&q=" + encodeURIComponent(input.value) +
         "&callback=googleCallback";
-
       document.body.appendChild(script);
     });
 
@@ -257,14 +332,35 @@
       }
 
       items.forEach(el => el.classList.remove("active"));
-      if (items[activeIndex]) items[activeIndex].classList.add("active");
+      items[activeIndex]?.classList.add("active");
     });
 
     document.addEventListener("click", e => {
-      if (!box.contains(e.target) && e.target !== input) {
-        box.hidden = true;
-      }
+      if (!box.contains(e.target) && e.target !== input) box.hidden = true;
     });
+
+    /* Dropdown menus */
+document.querySelectorAll(".menu-button").forEach(button => {
+  button.addEventListener("click", e => {
+    e.stopPropagation();
+
+    const menu = button.parentElement;
+
+    // Close other menus
+    document.querySelectorAll(".menu").forEach(m => {
+      if (m !== menu) m.classList.remove("open");
+    });
+
+    // Toggle this one
+    menu.classList.toggle("open");
+  });
+});
+
+// Close menus when clicking elsewhere
+document.addEventListener("click", () => {
+  document.querySelectorAll(".menu").forEach(m => m.classList.remove("open"));
+});
+
   </script>
 </body>
 </html>
