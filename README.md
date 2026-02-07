@@ -96,7 +96,7 @@ Adjusting these values will update the theme globally.
 ---
 Project Structure
 
-/
+
 ├── index.html
 
 ├── Icon.png
