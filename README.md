@@ -4,6 +4,8 @@ A lightweight, self-hosted new tab homepage built using plain HTML, CSS, and Jav
 
 This project is designed to be fast, easily configurable, and suitable for hosting on GitHub Pages without any server-side dependencies.
 
+Currently hosted at https://andypeterstanton.github.io/
+
 ---
 
 ## Overview
