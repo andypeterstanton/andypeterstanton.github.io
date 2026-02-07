@@ -56,10 +56,13 @@ const BOOKMARK_FOLDERS = [
     Folder order is preserved as defined
 
     No HTML changes are required when adding or removing folders
-
+```
+---
 Weather Settings
 
 Weather data is provided by the Open-Meteo API and requires no API key.
+
+```js
 
 const WEATHER_CONFIG = {
   lat: 52.71978,
@@ -71,10 +74,12 @@ const WEATHER_CONFIG = {
 
     hours controls the number of upcoming hourly forecasts displayed
 
+```
 Theme Settings
 
 The visual appearance is controlled using CSS variables:
 
+```js
 :root {
   --bg: #0f1115;
   --card: #161a22;
@@ -86,6 +91,9 @@ The visual appearance is controlled using CSS variables:
 }
 
 Adjusting these values will update the theme globally.
+
+```
+---
 Project Structure
 
 /
