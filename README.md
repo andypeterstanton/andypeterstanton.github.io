@@ -98,29 +98,31 @@ Project Structure
 
 /
 ├── index.html
+
 ├── Icon.png
+
 └── README.md
 
 The entire application is contained within a single HTML file for ease of maintenance and portability.
 Design Principles
 
-    No frameworks or build steps
+  No frameworks or build steps
 
-    No cookies or persistent storage
+  No cookies or persistent storage
 
-    Fully configurable via code
+  Fully configurable via code
 
-    Suitable for personal use or sharing
+  Suitable for personal use or sharing
 
-    Predictable, readable structure
+  Predictable, readable structure
 
 License
 
 This project is released under the MIT License.
 Credits
 
-    Weather data: Open-Meteo
+  Weather data: Open-Meteo
 
-    Weather icons: OpenWeatherMap
+  Weather icons: OpenWeatherMap
 
-    Search suggestions: Google Suggest API
+  Search suggestions: Google Suggest API
