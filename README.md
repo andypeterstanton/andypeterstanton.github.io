@@ -29,6 +29,15 @@ It can also be used locally by opening the HTML file directly in a browser.
 
 ---
 
+## Future Plans
+
+Plans include the following
+
+- Search Engine Toggling
+- Audio / Podcast built in player
+
+---
+
 ## Configuration
 
 All user-editable settings are grouped at the top of `index.html` and clearly marked.
@@ -58,7 +67,7 @@ const BOOKMARK_FOLDERS = [
     No HTML changes are required when adding or removing folders
 ```
 ---
-Weather Settings
+### Weather Settings
 
 Weather data is provided by the Open-Meteo API and requires no API key.
 
@@ -75,7 +84,7 @@ const WEATHER_CONFIG = {
     hours controls the number of upcoming hourly forecasts displayed
 
 ```
-Theme Settings
+### Theme Settings
 
 The visual appearance is controlled using CSS variables:
 
@@ -94,7 +103,7 @@ Adjusting these values will update the theme globally.
 
 ```
 ---
-Project Structure
+##Project Structure
 
 
 ├── index.html
@@ -104,7 +113,9 @@ Project Structure
 └── README.md
 
 The entire application is contained within a single HTML file for ease of maintenance and portability.
-Design Principles
+
+
+## Design Principles
 
   No frameworks or build steps
 
@@ -116,10 +127,11 @@ Design Principles
 
   Predictable, readable structure
 
-License
+## License
 
 This project is released under the MIT License.
-Credits
+
+## Credits
 
   Weather data: Open-Meteo
 
