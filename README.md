@@ -66,7 +66,7 @@ const BOOKMARK_FOLDERS = [
 
     No HTML changes are required when adding or removing folders
 ```
----
+
 ### Weather Settings
 
 Weather data is provided by the Open-Meteo API and requires no API key.
