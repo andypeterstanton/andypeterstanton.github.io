@@ -1,634 +1,661 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>New Tab</title>
-  <link rel="icon" type="image/png" href="Icon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>New Tab</title>
+    <link rel="icon" type="image/png" href="Icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<script>
-/* =====================================================
-   USER CONFIGURATION (safe to edit)
+    <script>
+      /* =====================================================
+        USER CONFIGURATION (safe to edit)
 
-   HOW TO EDIT BOOKMARKS
-   -----------------------------------------------------
-   • Each object = one dropdown folder
-   • Folder order = left to right
-   • Set enabled: false to hide a folder
-   • Add/remove links by editing the links array
-   • NO HTML OR CSS CHANGES REQUIRED
-   ===================================================== */
+        HOW TO EDIT BOOKMARKS
+        -----------------------------------------------------
+        • Each object = one dropdown folder
+        • Folder order = left to right
+        • Set enabled: false to hide a folder
+        • Add/remove links by editing the links array
+        • NO HTML OR CSS CHANGES REQUIRED
+        ===================================================== */
 
-const BOOKMARK_FOLDERS = [
-  {
-    title: "Google",
-    enabled: true,
-    links: [
-      { name: "Gmail", url: "https://mail.google.com" },
-      { name: "YouTube", url: "https://www.youtube.com" },
-      { name: "Photos", url: "https://photos.google.com" },
-      { name: "Drive", url: "https://drive.google.com" },
-      { name: "Calendar", url: "https://calendar.google.com" }
-    ]
-  },
-  {
-    title: "Other",
-    enabled: true,
-    links: [
-      { name: "Ultimate Guitar", url: "https://www.ultimate-guitar.com" },
-      { name: "Facebook", url: "https://www.facebook.com" },
-      { name: "GitHub", url: "https://github.com" },
-      { name: "Reddit", url: "https://reddit.com" }
-    ]
-  },
-  {
-    title: "Dev",
-    enabled: false,   // ← hidden but kept for later
-    links: [
-      { name: "Stack Overflow", url: "https://stackoverflow.com" },
-      { name: "MDN", url: "https://developer.mozilla.org" }
-    ]
-  }
-];
+      const BOOKMARK_FOLDERS = [
+        {
+          title: "Google",
+          enabled: true,
+          links: [
+            { name: "Gmail", url: "https://mail.google.com" },
+            { name: "YouTube", url: "https://www.youtube.com" },
+            { name: "Photos", url: "https://photos.google.com" },
+            { name: "Drive", url: "https://drive.google.com" },
+            { name: "Calendar", url: "https://calendar.google.com" },
+          ],
+        },
+        {
+          title: "Other",
+          enabled: true,
+          links: [
+            { name: "Ultimate Guitar", url: "https://www.ultimate-guitar.com" },
+            { name: "Facebook", url: "https://www.facebook.com" },
+            { name: "GitHub", url: "https://github.com" },
+            { name: "Reddit", url: "https://reddit.com" },
+          ],
+        },
+        {
+          title: "Dev",
+          enabled: false, // ← hidden but kept for later
+          links: [
+            { name: "Stack Overflow", url: "https://stackoverflow.com" },
+            { name: "MDN", url: "https://developer.mozilla.org" },
+          ],
+        },
+      ];
 
-const WEATHER_CONFIG = {
-  lat: 52.71978,
-  lon: -1.35687,
-  hours: 6
-};
-</script>
+      const WEATHER_CONFIG = {
+        lat: 52.71978,
+        lon: -1.35687,
+        hours: 6,
+      };
+    </script>
 
+    <style>
+      /* =====================================================
+        THEME SETTINGS (safe to edit)
+        ===================================================== */
 
+      :root {
+        --bg: #0f1115;
+        --card: #161a22;
+        --text: #eaeaf0;
+        --muted: #9aa0a6;
+        --accent: #8ab4f8;
+        --border: #232938;
+        --radius: 18px;
+      }
 
-  <style>
-    /* =====================================================
-   THEME SETTINGS (safe to edit)
-   ===================================================== */
+      /* Global reset / font */
+      * {
+        box-sizing: border-box;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+      }
 
-    :root {
-      --bg: #0f1115;
-      --card: #161a22;
-      --text: #eaeaf0;
-      --muted: #9aa0a6;
-      --accent: #8ab4f8;
-      --border: #232938;
-      --radius: 18px;
-    }
-
-    /* Global reset / font */
-    * {
-      box-sizing: border-box;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    /* =====================
+      /* =====================
        Page background
        ===================== */
-    body {
-      margin: 0;
-      height: 100vh;
-      color: var(--text);
-      display: flex;
-      flex-direction: column;
-      background: linear-gradient(120deg, #0f1115, #151a25, #0f1115);
-      background-size: 400% 400%;
-      animation: gradientMove 20s ease infinite;
-    }
+      body {
+        margin: 0;
+        height: 100vh;
+        color: var(--text);
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(120deg, #0f1115, #151a25, #0f1115);
+        background-size: 400% 400%;
+        animation: gradientMove 20s ease infinite;
+      }
 
-    @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+      @keyframes gradientMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
 
-    /* =====================
+      /* =====================
        Top link menus
        ===================== */
-    .top-links {
-      display: flex;
-      justify-content: flex-end;
-      padding: 20px 28px;
-      gap: 24px;
-      font-size: 14px;
-    }
+      .top-links {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 28px;
+        gap: 24px;
+        font-size: 14px;
+      }
 
-    .menu {
-      position: relative;
-    }
+      .menu {
+        position: relative;
+      }
 
-    .menu-button {
-      background: none;
-      border: none;
-      color: var(--muted);
-      font-size: 14px;
-      cursor: pointer;
-    }
+      .menu-button {
+        background: none;
+        border: none;
+        color: var(--muted);
+        font-size: 14px;
+        cursor: pointer;
+      }
 
-    .menu-button:hover {
-      color: var(--text);
-    }
+      .menu-button:hover {
+        color: var(--text);
+      }
 
-    .dropdown {
-      position: absolute;
-      right: 0;
-      top: 120%;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      min-width: 190px;
-      padding: 6px 0;
-      display: none;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-      z-index: 50;
-    }
+      .dropdown {
+        position: absolute;
+        right: 0;
+        top: 120%;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        min-width: 190px;
+        padding: 6px 0;
+        display: none;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        z-index: 50;
+      }
 
-    .menu.open .dropdown {
-      display: block;
-    }
+      .menu.open .dropdown {
+        display: block;
+      }
 
-    .dropdown a {
-      display: block;
-      padding: 10px 16px;
-      color: var(--text);
-      text-decoration: none;
-    }
+      .dropdown a {
+        display: block;
+        padding: 10px 16px;
+        color: var(--text);
+        text-decoration: none;
+      }
 
-    .dropdown a:hover {
-      background: rgba(138,180,248,0.15);
-    }
+      .dropdown a:hover {
+        background: rgba(138, 180, 248, 0.15);
+      }
 
-    /* =====================
+      /* =====================
        Center content
        ===================== */
-    .center {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 32px;
-    }
+      .center {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+      }
 
-    /* Clock */
-    .clock {
-      font-size: 48px;
-      text-align: center;
-      letter-spacing: -1px;
-    }
+      /* Clock */
+      .clock {
+        font-size: 48px;
+        text-align: center;
+        letter-spacing: -1px;
+      }
 
-    .clock span {
-      display: block;
-      font-size: 15px;
-      color: var(--muted);
-      margin-top: 6px;
-    }
+      .clock span {
+        display: block;
+        font-size: 15px;
+        color: var(--muted);
+        margin-top: 6px;
+      }
 
-    /* =====================
+      /* =====================
        Weather card
        ===================== */
-    .weather {
-      position: absolute;
-      top: 28px;
-      left: 28px;
-      width: 300px;
+      .weather {
+        position: absolute;
+        top: 28px;
+        left: 28px;
+        width: 300px;
 
-      display: flex;
-      flex-direction: column; /* key: stack current + hourly vertically */
-      gap: 14px;
+        display: flex;
+        flex-direction: column; /* key: stack current + hourly vertically */
+        gap: 14px;
 
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 14px 16px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 14px 16px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 
-      font-size: 13px;
-      color: var(--muted);
-    }
+        font-size: 13px;
+        color: var(--muted);
+      }
 
-    .weather-now {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+      .weather-now {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
 
-    .weather-now img {
-      width: 42px;
-      height: 42px;
-    }
+      .weather-now img {
+        width: 42px;
+        height: 42px;
+      }
 
-    .weather-temp {
-      font-size: 20px;
-      font-weight: 600;
-    }
+      .weather-temp {
+        font-size: 20px;
+        font-weight: 600;
+      }
 
-    .weather-desc {
-      text-transform: capitalize;
-    }
+      .weather-desc {
+        text-transform: capitalize;
+      }
 
-    /* Hourly forecast row */
-    .weather-hourly {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      padding-top: 6px;
-    }
+      /* Hourly forecast row */
+      .weather-hourly {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding-top: 6px;
+      }
 
-    .hour {
-      text-align: center;
-      min-width: 36px;
-    }
+      .hour {
+        text-align: center;
+        min-width: 36px;
+      }
 
-    .hour img {
-      width: 26px;
-      height: 26px;
-    }
+      .hour img {
+        width: 26px;
+        height: 26px;
+      }
 
-    .hour span {
-      display: block;
-      font-size: 11px;
-      color: var(--muted);
-    }
+      .hour span {
+        display: block;
+        font-size: 11px;
+        color: var(--muted);
+      }
 
-    /* =====================
+      /* =====================
        Search box
        ===================== */
-    .search-wrapper {
-      position: relative;
-      width: min(680px, 90%);
-    }
+      .search-wrapper {
+        position: relative;
+        width: min(680px, 90%);
+      }
 
-    .search-box {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      padding: 14px 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    }
+      .search-box {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        display: flex;
+        align-items: center;
+        padding: 14px 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      }
 
-    .search-box:focus-within {
-      border-color: var(--accent);
-      box-shadow:
-        0 0 0 1px var(--accent),
-        0 25px 60px rgba(0,0,0,0.6);
-    }
+      .search-box:focus-within {
+        border-color: var(--accent);
+        box-shadow:
+          0 0 0 1px var(--accent),
+          0 25px 60px rgba(0, 0, 0, 0.6);
+      }
 
-    .search-box input {
-      flex: 1;
-      background: transparent;
-      border: none;
-      outline: none;
-      color: var(--text);
-      font-size: 18px;
-    }
+      .search-box input {
+        flex: 1;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: var(--text);
+        font-size: 18px;
+      }
 
-    .search-box input::placeholder {
-      color: var(--muted);
-    }
+      .search-box input::placeholder {
+        color: var(--muted);
+      }
 
-    .toggle {
-      background: transparent;
-      border: none;
-      font-size: 18px;
-      cursor: pointer;
-      color: var(--muted);
-      margin-left: 10px;
-    }
+      .toggle {
+        background: transparent;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        color: var(--muted);
+        margin-left: 10px;
+      }
 
-    .toggle:hover {
-      color: var(--accent);
-    }
+      .toggle:hover {
+        color: var(--accent);
+      }
 
-    /* Autocomplete dropdown */
-    .autocomplete {
-      position: absolute;
-      top: calc(100% + 10px);
-      width: 100%;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.6);
-      z-index: 20;
-    }
+      /* Autocomplete dropdown */
+      .autocomplete {
+        position: absolute;
+        top: calc(100% + 10px);
+        width: 100%;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+        z-index: 20;
+      }
 
-    .autocomplete div {
-      padding: 14px 20px;
-      cursor: pointer;
-    }
+      .autocomplete div {
+        padding: 14px 20px;
+        cursor: pointer;
+      }
 
-    .autocomplete div:hover,
-    .autocomplete .active {
-      background: rgba(138,180,248,0.15);
-    }
+      .autocomplete div:hover,
+      .autocomplete .active {
+        background: rgba(138, 180, 248, 0.15);
+      }
 
-    .hint {
-      font-size: 13px;
-      color: var(--muted);
-    }
-  </style>
-</head>
+      .hint {
+        font-size: 13px;
+        color: var(--muted);
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
+    <div class="top-links" id="bookmarks"></div>
 
-  <div class="top-links" id="bookmarks"></div>
-
-
-  <!-- Weather card -->
-  <div id="weather" class="weather">
-    <div class="weather-now">
-      <img id="weatherIcon" />
-      <div>
-        <div id="weatherTemp" class="weather-temp"></div>
-        <div id="weatherDesc" class="weather-desc"></div>
+    <!-- Weather card -->
+    <div id="weather" class="weather">
+      <div class="weather-now">
+        <img id="weatherIcon" />
+        <div>
+          <div id="weatherTemp" class="weather-temp"></div>
+          <div id="weatherDesc" class="weather-desc"></div>
+        </div>
       </div>
+
+      <!-- Hourly forecast injected here -->
+      <div id="hourly" class="weather-hourly"></div>
     </div>
 
-    <!-- Hourly forecast injected here -->
-    <div id="hourly" class="weather-hourly"></div>
-  </div>
+    <!-- Center content -->
+    <div class="center">
+      <div id="clock" class="clock"></div>
 
-  <!-- Center content -->
-  <div class="center">
-    <div id="clock" class="clock"></div>
+      <div class="search-wrapper">
+        <form
+          id="searchForm"
+          class="search-box"
+          action="https://www.google.com/search"
+          method="GET"
+          autocomplete="off"
+        >
+          <input
+            id="searchInput"
+            name="q"
+            autofocus
+            placeholder="Search Google…"
+          />
+          <button type="button" id="searchToggle" class="toggle">🔍</button>
+          <input type="hidden" id="tbm" />
+        </form>
 
-    <div class="search-wrapper">
-      <form id="searchForm" class="search-box"
-            action="https://www.google.com/search"
-            method="GET"
-            autocomplete="off">
-        <input id="searchInput" name="q" autofocus placeholder="Search Google…" />
-        <button type="button" id="searchToggle" class="toggle">🔍</button>
-        <input type="hidden" id="tbm">
-      </form>
+        <div id="autocomplete" class="autocomplete" hidden></div>
+      </div>
 
-      <div id="autocomplete" class="autocomplete" hidden></div>
+      <div class="hint">Press Enter to search</div>
     </div>
 
-    <div class="hint">Press Enter to search</div>
-  </div>
-
-  <script>
-    /* =====================
+    <script>
+      /* =====================
        Clock
        ===================== */
-    function updateClock() {
-      const now = new Date();
-      const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-      const date = now.toLocaleDateString([], {
-        weekday: "long",
-        month: "long",
-        day: "numeric"
-      });
-      document.getElementById("clock").innerHTML = `${time}<span>${date}</span>`;
-    }
+      function updateClock() {
+        const now = new Date();
+        const time = now.toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+        const date = now.toLocaleDateString([], {
+          weekday: "long",
+          month: "long",
+          day: "numeric",
+        });
+        document.getElementById("clock").innerHTML =
+          `${time}<span>${date}</span>`;
+      }
 
-    updateClock();
-    setInterval(updateClock, 1000);
+      updateClock();
+      setInterval(updateClock, 1000);
 
-    /* =====================
+      /* =====================
        Weather (Open-Meteo)
        ===================== */
-    async function loadWeather() {
-      const { lat, lon, hours } = WEATHER_CONFIG;
+      async function loadWeather() {
+        const { lat, lon, hours } = WEATHER_CONFIG;
 
+        const res = await fetch(
+          `https://api.open-meteo.com/v1/forecast` +
+            `?latitude=${lat}&longitude=${lon}` +
+            `&current_weather=true` +
+            `&hourly=temperature_2m,weathercode` +
+            `&timezone=auto`,
+        );
 
-      const res = await fetch(
-        `https://api.open-meteo.com/v1/forecast` +
-        `?latitude=${lat}&longitude=${lon}` +
-        `&current_weather=true` +
-        `&hourly=temperature_2m,weathercode` +
-        `&timezone=auto`
-      );
+        const data = await res.json();
 
-      const data = await res.json();
+        /* Current weather */
+        document.getElementById("weatherTemp").textContent =
+          Math.round(data.current_weather.temperature) + "°C";
 
-      /* Current weather */
-      document.getElementById("weatherTemp").textContent =
-        Math.round(data.current_weather.temperature) + "°C";
+        document.getElementById("weatherDesc").textContent = weatherDescription(
+          data.current_weather.weathercode,
+        );
 
-      document.getElementById("weatherDesc").textContent =
-        weatherDescription(data.current_weather.weathercode);
+        document.getElementById("weatherIcon").src = weatherIconUrl(
+          data.current_weather.weathercode,
+        );
 
-      document.getElementById("weatherIcon").src =
-        weatherIconUrl(data.current_weather.weathercode);
+        /* Hourly forecast: next 6 full hours */
+        const hourlyEl = document.getElementById("hourly");
+        hourlyEl.innerHTML = "";
 
-      /* Hourly forecast: next 6 full hours */
-      const hourlyEl = document.getElementById("hourly");
-      hourlyEl.innerHTML = "";
+        const now = new Date();
+        const currentHour = now.toISOString().slice(0, 13);
+        const startIndex = data.hourly.time.findIndex((t) =>
+          t.startsWith(currentHour),
+        );
 
-      const now = new Date();
-      const currentHour = now.toISOString().slice(0, 13);
-      const startIndex = data.hourly.time.findIndex(t =>
-        t.startsWith(currentHour)
-      );
+        for (let i = startIndex + 1; i <= startIndex + hours; i++) {
+          const hourTime = new Date(data.hourly.time[i]);
+          const label = hourTime.toLocaleTimeString([], {
+            hour: "2-digit",
+            minute: "2-digit",
+          });
 
-      for (let i = startIndex + 1; i <= startIndex + hours; i++) {
-        const hourTime = new Date(data.hourly.time[i]);
-        const label = hourTime.toLocaleTimeString([], {
-          hour: "2-digit",
-          minute: "2-digit"
-        });
-
-        const div = document.createElement("div");
-        div.className = "hour";
-        div.innerHTML = `
+          const div = document.createElement("div");
+          div.className = "hour";
+          div.innerHTML = `
           <span>${label}</span>
           <img src="${weatherIconUrl(data.hourly.weathercode[i])}">
           <strong>${Math.round(data.hourly.temperature_2m[i])}°</strong>
         `;
-        hourlyEl.appendChild(div);
+          hourlyEl.appendChild(div);
+        }
       }
-    }
 
-    loadWeather();
+      loadWeather();
 
-    /* Weather helpers */
-    function weatherIconUrl(code) {
-      if (code === 0) return "https://openweathermap.org/img/wn/01d.png";
-      if ([1, 2].includes(code)) return "https://openweathermap.org/img/wn/02d.png";
-      if (code === 3) return "https://openweathermap.org/img/wn/03d.png";
-      if (code >= 45 && code <= 48) return "https://openweathermap.org/img/wn/50d.png";
-      if (code >= 51 && code <= 67) return "https://openweathermap.org/img/wn/09d.png";
-      if (code >= 71 && code <= 77) return "https://openweathermap.org/img/wn/13d.png";
-      if (code >= 80 && code <= 82) return "https://openweathermap.org/img/wn/10d.png";
-      if (code >= 95) return "https://openweathermap.org/img/wn/11d.png";
-      return "https://openweathermap.org/img/wn/01d.png";
-    }
+      /* Weather helpers */
+      function weatherIconUrl(code) {
+        if (code === 0) return "https://openweathermap.org/img/wn/01d.png";
+        if ([1, 2].includes(code))
+          return "https://openweathermap.org/img/wn/02d.png";
+        if (code === 3) return "https://openweathermap.org/img/wn/03d.png";
+        if (code >= 45 && code <= 48)
+          return "https://openweathermap.org/img/wn/50d.png";
+        if (code >= 51 && code <= 67)
+          return "https://openweathermap.org/img/wn/09d.png";
+        if (code >= 71 && code <= 77)
+          return "https://openweathermap.org/img/wn/13d.png";
+        if (code >= 80 && code <= 82)
+          return "https://openweathermap.org/img/wn/10d.png";
+        if (code >= 95) return "https://openweathermap.org/img/wn/11d.png";
+        return "https://openweathermap.org/img/wn/01d.png";
+      }
 
-    function weatherDescription(code) {
-      const map = {
-        0: "Clear",
-        1: "Mostly clear",
-        2: "Partly cloudy",
-        3: "Overcast",
-        45: "Fog",
-        51: "Light rain",
-        61: "Rain",
-        71: "Snow",
-        80: "Showers",
-        95: "Thunderstorm"
-      };
-      return map[code] || "Weather";
-    }
+      function weatherDescription(code) {
+        const map = {
+          0: "Clear",
+          1: "Mostly clear",
+          2: "Partly cloudy",
+          3: "Overcast",
+          45: "Fog",
+          51: "Light rain",
+          61: "Rain",
+          71: "Snow",
+          80: "Showers",
+          95: "Thunderstorm",
+        };
+        return map[code] || "Weather";
+      }
 
-    /* =====================
+      /* =====================
        Search mode toggle
        ===================== */
-    let imageMode = false;
-    const toggle = document.getElementById("searchToggle");
-    const tbm = document.getElementById("tbm");
-    const input = document.getElementById("searchInput");
+      let imageMode = false;
+      const toggle = document.getElementById("searchToggle");
+      const tbm = document.getElementById("tbm");
+      const input = document.getElementById("searchInput");
 
-    toggle.onclick = () => {
-      imageMode = !imageMode;
-      if (imageMode) {
-        tbm.name = "tbm";
-        tbm.value = "isch";
-        toggle.textContent = "🖼️";
-        input.placeholder = "Search Google Images…";
-      } else {
-        tbm.name = "";
-        tbm.value = "";
-        toggle.textContent = "🔍";
-        input.placeholder = "Search Google…";
-      }
-    };
+      toggle.onclick = () => {
+        imageMode = !imageMode;
+        if (imageMode) {
+          tbm.name = "tbm";
+          tbm.value = "isch";
+          toggle.textContent = "🖼️";
+          input.placeholder = "Search Google Images…";
+        } else {
+          tbm.name = "";
+          tbm.value = "";
+          toggle.textContent = "🔍";
+          input.placeholder = "Search Google…";
+        }
+      };
 
-    /* =====================
-       Autocomplete
-       ===================== */
-    const box = document.getElementById("autocomplete");
-    let activeIndex = -1;
+      /* =====================
+        Autocomplete
+        ===================== */
+      const box = document.getElementById("autocomplete");
+      let activeIndex = -1;
 
-    window.googleCallback = data => {
-      const suggestions = data[1].slice(0, 8);
-      box.innerHTML = "";
-      activeIndex = -1;
+      window.googleCallback = (data) => {
+        const suggestions = data[1].slice(0, 8);
+        box.innerHTML = "";
+        activeIndex = -1;
 
-      suggestions.forEach(text => {
-        const div = document.createElement("div");
-        div.textContent = text;
-        div.onclick = () => {
-          input.value = text;
-          input.form.submit();
-        };
-        box.appendChild(div);
-      });
-
-      box.hidden = !suggestions.length;
-    };
-
-    input.addEventListener("input", () => {
-      if (!input.value.trim()) {
-        box.hidden = true;
-        return;
-      }
-
-      document.getElementById("jsonp")?.remove();
-      const script = document.createElement("script");
-      script.id = "jsonp";
-      script.src =
-        "https://suggestqueries.google.com/complete/search" +
-        "?client=firefox&q=" + encodeURIComponent(input.value) +
-        "&callback=googleCallback";
-      document.body.appendChild(script);
-    });
-
-    input.addEventListener("keydown", e => {
-      const items = box.querySelectorAll("div");
-      if (!items.length) return;
-
-      if (e.key === "ArrowDown") activeIndex = (activeIndex + 1) % items.length;
-      if (e.key === "ArrowUp") activeIndex = (activeIndex - 1 + items.length) % items.length;
-
-      if (e.key === "Enter" && activeIndex >= 0) {
-        e.preventDefault();
-        input.value = items[activeIndex].textContent;
-        input.form.submit();
-      }
-
-      items.forEach(el => el.classList.remove("active"));
-      items[activeIndex]?.classList.add("active");
-    });
-
-    document.addEventListener("click", e => {
-      if (!box.contains(e.target) && e.target !== input) box.hidden = true;
-    });
-
-    /* =====================
-   Build bookmark menus
-   ===================== */
-const bookmarksEl = document.getElementById("bookmarks");
-
-BOOKMARK_FOLDERS
-  .filter(folder => folder.enabled !== false)
-  .forEach(folder => {
-  const menu = document.createElement("div");
-  menu.className = "menu";
-
-  const button = document.createElement("button");
-  button.className = "menu-button";
-  button.textContent = folder.title + " ▾";
-
-  const dropdown = document.createElement("div");
-  dropdown.className = "dropdown";
-
-  folder.links.forEach(link => {
-    const a = document.createElement("a");
-    a.href = link.url;
-    a.textContent = link.name;
-    dropdown.appendChild(a);
-  });
-
-  menu.appendChild(button);
-  menu.appendChild(dropdown);
-  bookmarksEl.appendChild(menu);
-});
-
-
-    /* =====================
-       Dropdown menus
-       ===================== */
-    document.querySelectorAll(".menu-button").forEach(button => {
-      button.addEventListener("click", e => {
-        e.stopPropagation();
-        const menu = button.parentElement;
-
-        document.querySelectorAll(".menu").forEach(m => {
-          if (m !== menu) m.classList.remove("open");
+        suggestions.forEach((text) => {
+          const div = document.createElement("div");
+          div.textContent = text;
+          div.onclick = () => {
+            input.value = text;
+            input.form.submit();
+          };
+          box.appendChild(div);
         });
 
-        menu.classList.toggle("open");
+        box.hidden = !suggestions.length;
+      };
+
+      input.addEventListener("input", () => {
+        if (!input.value.trim()) {
+          box.hidden = true;
+          return;
+        }
+
+        document.getElementById("jsonp")?.remove();
+        const script = document.createElement("script");
+        script.id = "jsonp";
+        script.src =
+          "https://suggestqueries.google.com/complete/search" +
+          "?client=firefox&q=" +
+          encodeURIComponent(input.value) +
+          "&callback=googleCallback";
+        document.body.appendChild(script);
       });
-    });
 
-    document.addEventListener("click", () => {
-      document.querySelectorAll(".menu").forEach(m => m.classList.remove("open"));
-    });
+      input.addEventListener("keydown", (e) => {
+        const items = box.querySelectorAll("div");
+        if (!items.length) return;
 
-    /* =====================
+        if (e.key === "ArrowDown")
+          activeIndex = (activeIndex + 1) % items.length;
+        if (e.key === "ArrowUp")
+          activeIndex = (activeIndex - 1 + items.length) % items.length;
+
+        if (e.key === "Enter" && activeIndex >= 0) {
+          e.preventDefault();
+          input.value = items[activeIndex].textContent;
+          input.form.submit();
+        }
+
+        items.forEach((el) => el.classList.remove("active"));
+        items[activeIndex]?.classList.add("active");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!box.contains(e.target) && e.target !== input) box.hidden = true;
+      });
+
+      /* =====================
+        Build bookmark menus
+        ===================== */
+      const bookmarksEl = document.getElementById("bookmarks");
+
+      BOOKMARK_FOLDERS.filter((folder) => folder.enabled !== false).forEach(
+        (folder) => {
+          const menu = document.createElement("div");
+          menu.className = "menu";
+
+          const button = document.createElement("button");
+          button.className = "menu-button";
+          button.textContent = folder.title + " ▾";
+
+          const dropdown = document.createElement("div");
+          dropdown.className = "dropdown";
+
+          folder.links.forEach((link) => {
+            const a = document.createElement("a");
+            a.href = link.url;
+            a.textContent = link.name;
+            dropdown.appendChild(a);
+          });
+
+          menu.appendChild(button);
+          menu.appendChild(dropdown);
+          bookmarksEl.appendChild(menu);
+        },
+      );
+
+      /* =====================
+       Dropdown menus
+       ===================== */
+      document.querySelectorAll(".menu-button").forEach((button) => {
+        button.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const menu = button.parentElement;
+
+          document.querySelectorAll(".menu").forEach((m) => {
+            if (m !== menu) m.classList.remove("open");
+          });
+
+          menu.classList.toggle("open");
+        });
+      });
+
+      document.addEventListener("click", () => {
+        document
+          .querySelectorAll(".menu")
+          .forEach((m) => m.classList.remove("open"));
+      });
+
+      /* =====================
        Smart URL detection
        ===================== */
-    document.getElementById("searchForm").addEventListener("submit", e => {
-      const value = input.value.trim();
+      document.getElementById("searchForm").addEventListener("submit", (e) => {
+        const value = input.value.trim();
 
-      const isURL =
-        value.includes(".") &&
-        !value.includes(" ") &&
-        !value.startsWith("?");
+        const isURL =
+          value.includes(".") && !value.includes(" ") && !value.startsWith("?");
 
-      if (isURL) {
-        e.preventDefault();
-        const url =
-          value.startsWith("http://") || value.startsWith("https://")
-            ? value
-            : "https://" + value;
+        if (isURL) {
+          e.preventDefault();
+          const url =
+            value.startsWith("http://") || value.startsWith("https://")
+              ? value
+              : "https://" + value;
 
-        window.location.href = url;
-      }
-    });
-  </script>
-</body>
+          window.location.href = url;
+        }
+      });
+    </script>
+  </body>
 </html>
