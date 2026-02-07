@@ -103,7 +103,7 @@ Adjusting these values will update the theme globally.
 
 ```
 ---
-##Project Structure
+## Project Structure
 
 
 ├── index.html
