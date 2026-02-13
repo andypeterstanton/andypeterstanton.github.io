@@ -1,52 +1,117 @@
 # New Tab Dashboard
 
-A lightweight, self-hosted new tab homepage built using plain HTML, CSS, and JavaScript.
+A lightweight, fully static, configurable new tab homepage built using plain HTML, CSS, and JavaScript.
 
-This project is designed to be fast, easily configurable, and suitable for hosting on GitHub Pages without any server-side dependencies.
+Designed for GitHub Pages hosting with **no server-side dependencies**, no build tools, and no frameworks.
 
-Currently hosted at https://andypeterstanton.github.io/
+Currently hosted at:  
+https://andypeterstanton.github.io/
 
 ---
 
 ## Overview
 
-The New Tab Dashboard provides a clean and functional start page featuring:
+New Tab Dashboard provides a clean, professional start page featuring:
 
-- A live clock and date display
-- Google search with autocomplete suggestions
-- Optional Google Images search toggle
-- Current weather conditions with an hourly forecast
+- Live clock and date display
+- Multi-engine search (Google, Bing, DuckDuckGo, Ecosia)
+- Engine toggle (dropdown selection)
+- Image search toggle (engine-aware)
+- Autocomplete suggestions (Google + Bing supported)
+- Smart URL detection (auto-directs if input looks like a URL)
+- Current weather conditions
+- 6-hour hourly forecast
 - Configurable bookmark folders with dropdown menus
-- Centralised theme and layout configuration
+- Fully centralised configuration blocks
+- Dark-mode-first professional theme
 
-The project does not rely on any frameworks, local storage, or build tools.
+The entire project runs as a **single static HTML file**.
+
+No local storage.  
+No cookies.  
+No external frameworks.  
+No API keys required.
 
 ---
 
 ## Hosting
 
-This project is intended to be hosted as a static site, for example using **GitHub Pages**.
+This project is designed for static hosting platforms such as:
 
-It can also be used locally by opening the HTML file directly in a browser.
+- GitHub Pages (recommended)
+- Netlify
+- Vercel (static mode)
+- Any basic web server
+
+It can also be opened locally by double-clicking `index.html`.
 
 ---
 
-## Future Plans
+## Current Features
 
-Plans include the following
+### 🔎 Search System
 
-- Search Engine Toggling
-- Audio / Podcast built in player
+- Engine switching
+- Image search toggle
+- Smart URL detection
+- Arrow-key navigation of suggestions
+- Left/right arrow “commit suggestion” behaviour
+- Configurable search engines
+- Per-engine autocomplete handling
+
+### 🌤 Weather
+
+- Powered by Open-Meteo
+- No API key required
+- Configurable latitude & longitude
+- Configurable number of forecast hours
+- Responsive layout (no overflow issues)
+
+### 📁 Bookmarks
+
+- Configuration-driven folders
+- Enable/disable entire folders
+- Easily comment out individual links
+- Expandable structure
+- No HTML editing required
+
+### 🎨 Theming
+
+- Controlled entirely via CSS variables
+- Global design tokens
+- Clean, modern dark theme
+- Easily adjustable colour palette
 
 ---
 
 ## Configuration
 
-All user-editable settings are grouped at the top of `index.html` and clearly marked.
+All editable settings are grouped at the top of `index.html` inside clearly marked configuration blocks.
 
-### Bookmark Folders
+---
 
-Bookmark folders are defined using a JavaScript configuration object:
+### 1️⃣ Search Engines
+
+```js
+const SEARCH_ENGINES = [
+  {
+    name: "Google",
+    enabled: true,
+    searchUrl: "...",
+    imageUrl: "...",
+    suggestUrl: "...",
+    jsonp: true
+  }
+];
+```
+
+- `enabled: false` hides an engine
+- Image mode is handled automatically
+- JSONP suggestions are supported where available
+
+---
+
+### 2️⃣ Bookmark Folders
 
 ```js
 const BOOKMARK_FOLDERS = [
@@ -54,43 +119,39 @@ const BOOKMARK_FOLDERS = [
     title: "Google",
     enabled: true,
     links: [
-      { name: "Gmail", url: "https://mail.google.com" },
-      { name: "YouTube", url: "https://www.youtube.com" }
+      { name: "Gmail", url: "https://mail.google.com" }
     ]
   }
 ];
-
-    Each object represents a dropdown menu
-
-    enabled: false will hide a folder without removing it
-
-    Folder order is preserved as defined
-
-    No HTML changes are required when adding or removing folders
 ```
 
-### Weather Settings
+- `enabled: false` hides a folder
+- Order is preserved as written
+- Add/remove links freely
+- No HTML changes required
 
-Weather data is provided by the Open-Meteo API and requires no API key.
+---
+
+### 3️⃣ Weather Configuration
 
 ```js
-
 const WEATHER_CONFIG = {
   lat: 52.71978,
   lon: -1.35687,
   hours: 6
 };
-
-    Latitude and longitude control the location
-
-    hours controls the number of upcoming hourly forecasts displayed
-
 ```
-### Theme Settings
 
-The visual appearance is controlled using CSS variables:
+- `lat` and `lon` control location
+- `hours` controls forecast length (e.g. 6 or 12)
 
-```js
+Weather powered by Open-Meteo.
+
+---
+
+### 4️⃣ Theme Variables
+
+```css
 :root {
   --bg: #0f1115;
   --card: #161a22;
@@ -100,43 +161,57 @@ The visual appearance is controlled using CSS variables:
   --border: #232938;
   --radius: 18px;
 }
-
-Adjusting these values will update the theme globally.
-
 ```
+
+All colours and design styling are centralised here.
+
 ---
+
 ## Project Structure
 
-
+```
 ├── index.html
-
 ├── Icon.png
+├── README.md
+└── CHANGELOG.md (optional future separation)
+```
 
-└── README.md
+Everything runs from `index.html` for maximum portability.
 
-The entire application is contained within a single HTML file for ease of maintenance and portability.
-
+---
 
 ## Design Principles
 
-  No frameworks or build steps
+- No frameworks
+- No build process
+- No server-side logic
+- No persistent storage
+- Fully configuration-driven
+- Predictable, readable structure
+- Professional but minimal aesthetic
 
-  No cookies or persistent storage
+---
 
-  Fully configurable via code
+## Future Roadmap
 
-  Suitable for personal use or sharing
+Potential enhancements:
 
-  Predictable, readable structure
+- Built-in audio/podcast player
+- Optional settings UI panel (static-based)
+- Background animation options
+- Customisable themes via config presets
+- Optional proxy-based universal autocomplete
+
+---
 
 ## License
 
-This project is released under the MIT License.
+MIT License
+
+---
 
 ## Credits
 
-  Weather data: Open-Meteo
-
-  Weather icons: OpenWeatherMap
-
-  Search suggestions: Google Suggest API
+- Weather data: Open-Meteo
+- Search suggestions: Google Suggest API & Bing Suggest API
+- Weather icons: OpenWeatherMap icon set
