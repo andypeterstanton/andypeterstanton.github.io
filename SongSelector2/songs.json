@@ -1,0 +1,3413 @@
+[
+  {
+    "number": 1,
+    "favourite": false,
+    "artist": "Pet Shop Boys",
+    "mp3": "",
+    "title": "Its A Sin",
+    "tuning": "5 String"
+  },
+  {
+    "number": 2,
+    "favourite": false,
+    "artist": "Madonna",
+    "mp3": "",
+    "title": "Sorry",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 3,
+    "favourite": false,
+    "artist": "Anastacia",
+    "mp3": "",
+    "title": "Im Outta Love",
+    "tuning": "5 String"
+  },
+  {
+    "number": 4,
+    "favourite": false,
+    "artist": "Queen",
+    "mp3": "",
+    "title": "Somebody To Love",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 5,
+    "favourite": false,
+    "artist": "The Doobie Brothers",
+    "mp3": "",
+    "title": "Long Train Runnin",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 6,
+    "favourite": false,
+    "artist": "The Mavericks",
+    "mp3": "",
+    "title": "Dance The Night Away",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 7,
+    "favourite": false,
+    "artist": "Bruno Mars",
+    "mp3": "",
+    "title": "Treasure",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 8,
+    "favourite": false,
+    "artist": "Ray Charles",
+    "mp3": "",
+    "title": "Hit The Road Jack",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 9,
+    "favourite": false,
+    "artist": "Misc Cartoons",
+    "mp3": "",
+    "title": "The Lorax - How Bad Can I Be",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 10,
+    "favourite": false,
+    "artist": "Bee Gees",
+    "mp3": "",
+    "title": "Stayin Alive",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 11,
+    "favourite": false,
+    "artist": "Jessie J",
+    "mp3": "",
+    "title": "Domino",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 12,
+    "favourite": false,
+    "artist": "The Jacksons",
+    "mp3": "",
+    "title": "Can You Feel It",
+    "tuning": "5 String"
+  },
+  {
+    "number": 13,
+    "favourite": false,
+    "artist": "Meghan Trainor",
+    "mp3": "",
+    "title": "Dear Future Husband",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 14,
+    "favourite": false,
+    "artist": "One Direction",
+    "mp3": "One Direction - Drag Me Down.mp3",
+    "title": "Drag Me Down",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 15,
+    "favourite": false,
+    "artist": "Steve Harley",
+    "mp3": "",
+    "title": "Make Me Smile",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 16,
+    "favourite": false,
+    "artist": "Ozzy Ozbourne",
+    "mp3": "",
+    "title": "Crazy Train",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 17,
+    "favourite": false,
+    "artist": "Christopher Cross",
+    "mp3": "",
+    "title": "Best That You Can Do",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 18,
+    "favourite": false,
+    "artist": "Ghost",
+    "mp3": "Ghost - Square Hammer.mp3",
+    "title": "Square Hammer",
+    "tuning": "DGCF"
+  },
+  {
+    "number": 19,
+    "favourite": false,
+    "artist": "Harry Styles",
+    "mp3": "Harry Styles - Late Night Talking.mp3",
+    "title": "Late Night Talking",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 20,
+    "favourite": false,
+    "artist": "Coldplay",
+    "mp3": "Coldplay - Yellow.mp3",
+    "title": "Yellow",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 21,
+    "favourite": false,
+    "artist": "Dolly Parton",
+    "mp3": "Dolly Parton - Jolene.mp3",
+    "title": "Jolene",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 22,
+    "favourite": false,
+    "artist": "The Strokes",
+    "mp3": "The Strokes - The Adults Are Talking.mp3",
+    "title": "The Adults Are Talking",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 23,
+    "favourite": false,
+    "artist": "Sabrina Carpenter",
+    "mp3": "Sabrina Carpenter - Espresso.mp3",
+    "title": "Espresso",
+    "tuning": "5 String"
+  },
+  {
+    "number": 24,
+    "favourite": false,
+    "artist": "Oliver",
+    "mp3": "Oliver - Good Morning Starshine.mp3",
+    "title": "Good Morning Starshine",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 25,
+    "favourite": false,
+    "artist": "The Chordettes",
+    "mp3": "The Chordettes - Lollipop.mp3",
+    "title": "Lollipop",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 26,
+    "favourite": false,
+    "artist": "MIKA",
+    "mp3": "MIKA - Relax (Take It Easy).mp3",
+    "title": "Relax Take It Easy",
+    "tuning": "5 String"
+  },
+  {
+    "number": 27,
+    "favourite": false,
+    "artist": "Randy Crawford",
+    "mp3": "Randy Crawford - Street Life.mp3",
+    "title": "Street Life",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 28,
+    "favourite": false,
+    "artist": "Lady Gaga",
+    "mp3": "Colby O'Donis; Lady Gaga - Just Dance.mp3",
+    "title": "Just Dance",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 29,
+    "favourite": false,
+    "artist": "Little Mix",
+    "mp3": "Little Mix - Black Magic.mp3",
+    "title": "Black Magic",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 30,
+    "favourite": false,
+    "artist": "Zara Larsson",
+    "mp3": "Zara Larsson - Lush Life.mp3",
+    "title": "Lush Life",
+    "tuning": "5 String"
+  },
+  {
+    "number": 31,
+    "favourite": false,
+    "artist": "Carly Rae Jepsen",
+    "mp3": "Carly Rae Jepsen - Call Me Maybe.mp3",
+    "title": "Call Me Maybe",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 32,
+    "favourite": false,
+    "artist": "Misc. Soundtrack",
+    "mp3": "John Travolta; Olivia Newton-John - You're The One That I Want - From “Grease”.mp3",
+    "title": "Grease Youre The One That I Want",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 33,
+    "favourite": false,
+    "artist": "Boney M",
+    "mp3": "Boney M. - Rasputin - Single Version.mp3",
+    "title": "Rasputin",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 34,
+    "favourite": false,
+    "artist": "Carly Rae Jepsen",
+    "mp3": "Carly Rae Jepsen - Cut To The Feeling.mp3",
+    "title": "Cut To The Feeling",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 35,
+    "favourite": false,
+    "artist": "Glass Animals",
+    "mp3": "Glass Animals - Heat Waves.mp3",
+    "title": "Heat Waves",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 36,
+    "favourite": false,
+    "artist": "The Wombats",
+    "mp3": "The Wombats - Let's Dance to Joy Division.mp3",
+    "title": "Lets Dance To Joy Division",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 37,
+    "favourite": false,
+    "artist": "Bleachers",
+    "mp3": "Bleachers - Don't Take The Money.mp3",
+    "title": "Dont Take The Money",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 38,
+    "favourite": false,
+    "artist": "Saint Motel",
+    "mp3": "Saint Motel - My Type.mp3",
+    "title": "My Type",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 39,
+    "favourite": false,
+    "artist": "My Chemical Romance",
+    "mp3": "My Chemical Romance - Welcome To The Black Parade.mp3",
+    "title": "Welcome To The Black Parade",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 40,
+    "favourite": false,
+    "artist": "The Doobie Brothers",
+    "mp3": "The Doobie Brothers - Long Train Runnin'.mp3",
+    "title": "Listen To The Music",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 41,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Idina Menzel; Kristen Bell - For the First Time in Forever - From \"Frozen\"-Soundtrack Version.mp3",
+    "title": "Frozen For The First Time In Forever",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 42,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Pokémon - Pokémon Theme.mp3",
+    "title": "Pokemon Theme",
+    "tuning": "5 String"
+  },
+  {
+    "number": 43,
+    "favourite": false,
+    "artist": "Mika",
+    "mp3": "MIKA - Happy Ending.mp3",
+    "title": "Happy Ending",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 44,
+    "favourite": false,
+    "artist": "Panic At The Disco",
+    "mp3": "Panic! At The Disco - I Write Sins Not Tragedies.mp3",
+    "title": "I Write Sins Not Tragedies",
+    "tuning": "Drop D"
+  },
+  {
+    "number": 45,
+    "favourite": false,
+    "artist": "The Struts",
+    "mp3": "The Struts - Could Have Been Me.mp3",
+    "title": "Could Have Been Me",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 46,
+    "favourite": false,
+    "artist": "Jet",
+    "mp3": "Jet - Are You Gonna Be My Girl.mp3",
+    "title": "Are You Gonna Be My Girl",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 47,
+    "favourite": false,
+    "artist": "Rascal Flatts",
+    "mp3": "Rascal Flatts - Life is a Highway.mp3",
+    "title": "Life Is A Highway",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 48,
+    "favourite": false,
+    "artist": "Blondie",
+    "mp3": "Blondie - One Way Or Another.mp3",
+    "title": "One Way Or Another",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 49,
+    "favourite": false,
+    "artist": "Rainbow",
+    "mp3": "Rainbow - Since You Been Gone.mp3",
+    "title": "Since You Been Gone",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 50,
+    "favourite": false,
+    "artist": "Metallica",
+    "mp3": "Metallica - Nothing Else Matters - Remastered 2021.mp3",
+    "title": "Nothing Else Matters",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 51,
+    "favourite": false,
+    "artist": "Electric Light Orchestra",
+    "mp3": "Electric Light Orchestra - Livin' Thing.mp3",
+    "title": "Livin Thing",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 52,
+    "favourite": false,
+    "artist": "McFly",
+    "mp3": "McFly; Taio Cruz - Shine A Light - Radio Edit.mp3",
+    "title": "Shine A Light",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 53,
+    "favourite": false,
+    "artist": "Baccara",
+    "mp3": "Baccara - Yes Sir, I Can Boogie.mp3",
+    "title": "Yes Sir I Can Boogie",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 54,
+    "favourite": false,
+    "artist": "Grover Washington Jr.",
+    "mp3": "Bill Eaton; Bill Withers; Grover Washington, Jr. - Just the Two of Us (feat. Bill Withers) - Edit.mp3",
+    "title": "Just The Two Of Us",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 55,
+    "favourite": false,
+    "artist": "Electric Light Orchestra",
+    "mp3": "Electric Light Orchestra - Shine a Little Love.mp3",
+    "title": "Shine a Little Love",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 56,
+    "favourite": false,
+    "artist": "Rick Astley",
+    "mp3": "Rick Astley - Never Gonna Give You Up.mp3",
+    "title": "Never Gonna Give You Up",
+    "tuning": "5 String"
+  },
+  {
+    "number": 57,
+    "favourite": false,
+    "artist": "The Weather Girls",
+    "mp3": "The Weather Girls - It's Raining Men.mp3",
+    "title": "Its Raining Men",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 58,
+    "favourite": false,
+    "artist": "Phil Collins",
+    "mp3": "Phil Collins - You'll Be In My Heart.mp3",
+    "title": "You'll Be In My Heart",
+    "tuning": "BbEbAbDbGb"
+  },
+  {
+    "number": 59,
+    "favourite": false,
+    "artist": "Foals",
+    "mp3": "Foals - My Number.mp3",
+    "title": "My Number",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 60,
+    "favourite": false,
+    "artist": "Cage The Elephant",
+    "mp3": "Cage The Elephant - Ain't No Rest For The Wicked - Original Version.mp3",
+    "title": "Aint No Rest For The Wicked",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 61,
+    "favourite": false,
+    "artist": "The Allman Brothers Band",
+    "mp3": "Allman Brothers Band - Southbound.mp3",
+    "title": "Southbound",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 62,
+    "favourite": false,
+    "artist": "KC And The Sunshine Band",
+    "mp3": "KC & The Sunshine Band - Give It Up.mp3",
+    "title": "Give It Up",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 63,
+    "favourite": false,
+    "artist": "The Black Keys",
+    "mp3": "The Black Keys - Gold on the Ceiling.mp3",
+    "title": "Gold on the Ceiling",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 64,
+    "favourite": false,
+    "artist": "The Beatles",
+    "mp3": "The Beatles - Let It Be - Remastered 2009.mp3",
+    "title": "Let It Be",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 65,
+    "favourite": false,
+    "artist": "Van Morrison",
+    "mp3": "Van Morrison - Brown Eyed Girl.mp3",
+    "title": "Brown Eyed Girl",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 66,
+    "favourite": false,
+    "artist": "David Bowie",
+    "mp3": "David Bowie - Modern Love - 2018 Remaster.mp3",
+    "title": "Modern Love",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 67,
+    "favourite": false,
+    "artist": "The Beatles",
+    "mp3": "The Beatles - A Hard Day's Night - Remastered 2015.mp3",
+    "title": "A Hard Days Night",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 68,
+    "favourite": false,
+    "artist": "Michael Buble",
+    "mp3": "Michael Bublé - Feeling Good.mp3",
+    "title": "Feeling Good",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 69,
+    "favourite": false,
+    "artist": "Lady Gaga",
+    "mp3": "Lady Gaga - The Edge Of Glory.mp3",
+    "title": "The Edge of Glory",
+    "tuning": "5 String"
+  },
+  {
+    "number": 70,
+    "favourite": false,
+    "artist": "Bon Jovi",
+    "mp3": "Bon Jovi - You Give Love A Bad Name.mp3",
+    "title": "You Give Love A Bad Name",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 71,
+    "favourite": false,
+    "artist": "Foo Fighters",
+    "mp3": "Foo Fighters - Learn to Fly.mp3",
+    "title": "Learn To Fly",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 72,
+    "favourite": false,
+    "artist": "Talking Heads",
+    "mp3": "Talking Heads - Psycho Killer.mp3",
+    "title": "Psycho Killer",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 73,
+    "favourite": false,
+    "artist": "The Vaccines",
+    "mp3": "The Vaccines - If You Wanna.mp3",
+    "title": "If You Wanna",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 74,
+    "favourite": false,
+    "artist": "Franz Ferdinand",
+    "mp3": "Franz Ferdinand - Take Me Out.mp3",
+    "title": "Take Me Out",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 75,
+    "favourite": false,
+    "artist": "The Strokes",
+    "mp3": "The Strokes - Last Nite.mp3",
+    "title": "Last Nite",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 76,
+    "favourite": false,
+    "artist": "Buzzcocks",
+    "mp3": "Buzzcocks - Jerk.mp3",
+    "title": "Jerk",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 77,
+    "favourite": false,
+    "artist": "My Chemical Romance",
+    "mp3": "My Chemical Romance - Teenagers.mp3",
+    "title": "Teenagers",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 78,
+    "favourite": false,
+    "artist": "The Temptations",
+    "mp3": "The Temptations - My Girl.mp3",
+    "title": "My Girl",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 79,
+    "favourite": false,
+    "artist": "Nickelback",
+    "mp3": "Nickelback - How You Remind Me.mp3",
+    "title": "How You Remind Me",
+    "tuning": "5 String"
+  },
+  {
+    "number": 80,
+    "favourite": false,
+    "artist": "Elton John",
+    "mp3": "Elton John - Saturday Night’s Alright (For Fighting) - Remastered 2014.mp3",
+    "title": "Saturday Nights Alright For Fighting",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 81,
+    "favourite": false,
+    "artist": "ABBA",
+    "mp3": "ABBA - Does Your Mother Know.mp3",
+    "title": "Does Your Mother Know",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 82,
+    "favourite": false,
+    "artist": "Olly Murs",
+    "mp3": "Olly Murs; Sally Herbert - Dear Darlin'.mp3",
+    "title": "Dear Darlin",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 83,
+    "favourite": false,
+    "artist": "Buzzcocks",
+    "mp3": "Buzzcocks - Ever Fallen in Love (With Someone You Shouldn't've?) - 1996 Remastered Version.mp3",
+    "title": "Ever Fallen In Love",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 84,
+    "favourite": false,
+    "artist": "Status Quo",
+    "mp3": "Status Quo - Rockin' All Over The World.mp3",
+    "title": "Rockin All Over The World",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 85,
+    "favourite": false,
+    "artist": "Judas Priest",
+    "mp3": "Judas Priest - Breaking the Law.mp3",
+    "title": "Breaking the Law",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 86,
+    "favourite": false,
+    "artist": "Europe",
+    "mp3": "Europe - The Final Countdown.mp3",
+    "title": "The Final Countdown",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 87,
+    "favourite": false,
+    "artist": "Dolly Parton",
+    "mp3": "Dolly Parton - 9 to 5.mp3",
+    "title": "9 To 5",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 88,
+    "favourite": false,
+    "artist": "Arctic Monkeys",
+    "mp3": "Arctic Monkeys - I Bet You Look Good On The Dancefloor.mp3",
+    "title": "I Bet You Look Good On The Dancefloor",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 89,
+    "favourite": false,
+    "artist": "Jennifer Lopez",
+    "mp3": "Jennifer Lopez - Let's Get Loud.mp3",
+    "title": "Lets Get Loud",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 90,
+    "favourite": false,
+    "artist": "Meghan Trainor",
+    "mp3": "Meghan Trainor - All About That Bass.mp3",
+    "title": "All About That Bass",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 91,
+    "favourite": false,
+    "artist": "Taylor Swift",
+    "mp3": "Taylor Swift - Love Story.mp3",
+    "title": "Love Story",
+    "tuning": "Drop D"
+  },
+  {
+    "number": 92,
+    "favourite": false,
+    "artist": "Ed Sheeran",
+    "mp3": "Ed Sheeran - Galway Girl.mp3",
+    "title": "Galway Girl",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 93,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Tenacious D - ...Baby One More Time (from Kung Fu Panda 4).mp3",
+    "title": "Kung Fu Panda 4 Baby One More Time",
+    "tuning": "5 String"
+  },
+  {
+    "number": 94,
+    "favourite": false,
+    "artist": "Shawn Mendes",
+    "mp3": "Shawn Mendes - Higher.mp3",
+    "title": "Higher",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 95,
+    "favourite": false,
+    "artist": "Wings",
+    "mp3": "Paul McCartney; Wings - Silly Love Songs - 2014 Remaster.mp3",
+    "title": "Silly Love Songs",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 96,
+    "favourite": false,
+    "artist": "Irene Cara",
+    "mp3": "London Theatre Orchestra & Cast - Fame (From \"Fame\").mp3",
+    "title": "Fame",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 97,
+    "favourite": false,
+    "artist": "The Rolling Stones",
+    "mp3": "The Rolling Stones - Paint It, Black.mp3",
+    "title": "Paint it Black",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 98,
+    "favourite": false,
+    "artist": "Empire Of The Sun",
+    "mp3": "Empire Of The Sun - Walking On A Dream.mp3",
+    "title": "Walking On A Dream",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 99,
+    "favourite": false,
+    "artist": "Sam & Dave",
+    "mp3": "Sam & Dave - Hold On, I'm Comin'.mp3",
+    "title": "Hold On I'm Coming",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 100,
+    "favourite": false,
+    "artist": "ABBA",
+    "mp3": "ABBA - Honey, Honey.mp3",
+    "title": "Honey Honey",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 101,
+    "favourite": false,
+    "artist": "ABBA",
+    "mp3": "ABBA - Fernando.mp3",
+    "title": "Fernando",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 102,
+    "favourite": false,
+    "artist": "ABBA",
+    "mp3": "ABBA - SOS.mp3",
+    "title": "SOS",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 103,
+    "favourite": false,
+    "artist": "Michael Buble",
+    "mp3": "Gina Zimmitti; JoAnn Tominaga; Michael Bublé - It's a Beautiful Day.mp3",
+    "title": "It's A Beautiful Day",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 104,
+    "favourite": false,
+    "artist": "Vanessa Carlton",
+    "mp3": "Vanessa Carlton - A Thousand Miles.mp3",
+    "title": "A Thousand Miles",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 105,
+    "favourite": false,
+    "artist": "Two Door Cinema Club",
+    "mp3": "Two Door Cinema Club - What You Know.mp3",
+    "title": "What You Know",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 106,
+    "favourite": false,
+    "artist": "CHVRCHES",
+    "mp3": "CHVRCHES - The Mother We Share.mp3",
+    "title": "The Mother We Share",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 107,
+    "favourite": false,
+    "artist": "Phoenix",
+    "mp3": "Phoenix - Lisztomania.mp3",
+    "title": "Lisztomania",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 108,
+    "favourite": false,
+    "artist": "Bee Gees",
+    "mp3": "Bee Gees - You Should Be Dancing.mp3",
+    "title": "You Should Be Dancing",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 109,
+    "favourite": false,
+    "artist": "MGMT",
+    "mp3": "MGMT - Electric Feel.mp3",
+    "title": "Electric Feel",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 110,
+    "favourite": false,
+    "artist": "Mark Ronson Feat. Miley Cyrus",
+    "mp3": "Mark Ronson - Nothing Breaks Like a Heart (feat. Miley Cyrus).mp3",
+    "title": "Nothing Breaks Like a Heart",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 111,
+    "favourite": false,
+    "artist": "Harry Styles",
+    "mp3": "Harry Styles - Late Night Talking.mp3",
+    "title": "Treat People With Kindness",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 112,
+    "favourite": false,
+    "artist": "DNCE",
+    "mp3": "DNCE - Cake By The Ocean.mp3",
+    "title": "Cake by the Ocean",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 113,
+    "favourite": false,
+    "artist": "Coldplay",
+    "mp3": "Coldplay - Adventure of a Lifetime.mp3",
+    "title": "Adventure of a Lifetime",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 114,
+    "favourite": false,
+    "artist": "OneRepublic",
+    "mp3": "OneRepublic - Love Runs Out.mp3",
+    "title": "Love Runs Out",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 115,
+    "favourite": false,
+    "artist": "Jess Glynne",
+    "mp3": "Jess Glynne - Hold My Hand.mp3",
+    "title": "Hold My Hand",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 116,
+    "favourite": false,
+    "artist": "Fitz and The Tantrums",
+    "mp3": "Fitz and The Tantrums - HandClap.mp3",
+    "title": "HandClap",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 117,
+    "favourite": false,
+    "artist": "Harry Styles",
+    "mp3": "Harry Styles - Watermelon Sugar.mp3",
+    "title": "Watermelon Sugar",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 118,
+    "favourite": false,
+    "artist": "Madness",
+    "mp3": "Madness - Our House.mp3",
+    "title": "Our House",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 119,
+    "favourite": false,
+    "artist": "John Paul Young",
+    "mp3": "John Paul Young - Love Is In The Air.mp3",
+    "title": "Love Is In The Air",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 120,
+    "favourite": false,
+    "artist": "P!NK",
+    "mp3": "P!nk - So What.mp3",
+    "title": "So What",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 121,
+    "favourite": false,
+    "artist": "Imagine Dragons",
+    "mp3": "Imagine Dragons - Thunder.mp3",
+    "title": "Thunder",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 122,
+    "favourite": false,
+    "artist": "Calvin Harris",
+    "mp3": "Calvin Harris - Feels (feat. Pharrell Williams, Katy Perry & Big Sean).mp3",
+    "title": "Feels",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 123,
+    "favourite": false,
+    "artist": "Foster The People",
+    "mp3": "Foster The People - Pumped Up Kicks.mp3",
+    "title": "Pumped Up Kicks",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 124,
+    "favourite": false,
+    "artist": "Years & Years",
+    "mp3": "Olly Alexander (Years & Years) - King.mp3",
+    "title": "King",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 125,
+    "favourite": false,
+    "artist": "The 1975",
+    "mp3": "The 1975 - The Sound.mp3",
+    "title": "The Sound",
+    "tuning": "5 String"
+  },
+  {
+    "number": 126,
+    "favourite": false,
+    "artist": "Portugal. The Man",
+    "mp3": "Portugal. The Man - Dummy.mp3",
+    "title": "Feel it Still",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 127,
+    "favourite": false,
+    "artist": "Of Monsters and Men",
+    "mp3": "Of Monsters and Men - Little Talks.mp3",
+    "title": "Little Talks",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 128,
+    "favourite": false,
+    "artist": "Maroon 5",
+    "mp3": "Maroon 5 - Sugar.mp3",
+    "title": "Sugar",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 129,
+    "favourite": false,
+    "artist": "Mumford & Sons",
+    "mp3": "Mumford & Sons - Babel.mp3",
+    "title": "Babel",
+    "tuning": "Drop D"
+  },
+  {
+    "number": 130,
+    "favourite": false,
+    "artist": "Jonas Brothers",
+    "mp3": "Cary Brothers - Back To The Start.mp3",
+    "title": "Sucker",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 131,
+    "favourite": false,
+    "artist": "One Republic",
+    "mp3": "OneRepublic - Counting Stars.mp3",
+    "title": "Counting Stars",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 132,
+    "favourite": false,
+    "artist": "Shawn Mendes",
+    "mp3": "Shawn Mendes - Stitches.mp3",
+    "title": "Stitches",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 133,
+    "favourite": false,
+    "artist": "The Ting Tings",
+    "mp3": "The Ting Tings - That's Not My Name - Short Edit.mp3",
+    "title": "That's Not My Name",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 134,
+    "favourite": false,
+    "artist": "Misc. Musicals",
+    "mp3": "Les Misérables Cast - Do You Hear The People Sing?.mp3",
+    "title": "Les Misérables Do You Hear The People Sing",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 135,
+    "favourite": false,
+    "artist": "Fountains of Wayne",
+    "mp3": "Fountains Of Wayne - Stacy's Mom.mp3",
+    "title": "Stacy's Mom",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 136,
+    "favourite": false,
+    "artist": "Guns N' Roses",
+    "mp3": "Guns N' Roses - Sweet Child O' Mine.mp3",
+    "title": "Sweet Child O Mine",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 137,
+    "favourite": false,
+    "artist": "Echosmith",
+    "mp3": "Echosmith - Cool Kids.mp3",
+    "title": "Cool Kids",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 138,
+    "favourite": false,
+    "artist": "The Kooks",
+    "mp3": "The Kooks - She Moves In Her Own Way.mp3",
+    "title": "She Moves In Her Own Way",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 139,
+    "favourite": false,
+    "artist": "Seal",
+    "mp3": "Seal - Kiss from a Rose.mp3",
+    "title": "Kiss From A Rose",
+    "tuning": "5 String"
+  },
+  {
+    "number": 140,
+    "favourite": false,
+    "artist": "Madcon",
+    "mp3": "Madcon; Ray Dalton - Don't Worry (with Ray Dalton) - Radio Edit.mp3",
+    "title": "Don't Worry",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 141,
+    "favourite": false,
+    "artist": "Elvis Presley",
+    "mp3": "Elvis Presley - Can't Help Falling in Love.mp3",
+    "title": "Can't Help Falling In Love",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 142,
+    "favourite": false,
+    "artist": "Mumford & Sons",
+    "mp3": "Mumford & Sons - The Wolf.mp3",
+    "title": "The Wolf",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 143,
+    "favourite": false,
+    "artist": "The Script",
+    "mp3": "The Script - The Man Who Can't Be Moved.mp3",
+    "title": "The Man Who Can't Be Moved",
+    "tuning": "5 String"
+  },
+  {
+    "number": 144,
+    "favourite": false,
+    "artist": "One Direction",
+    "mp3": "One Direction - Live While We're Young.mp3",
+    "title": "Live While We're Young",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 145,
+    "favourite": false,
+    "artist": "MAGIC!",
+    "mp3": "MAGIC! - Rude.mp3",
+    "title": "Rude",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 146,
+    "favourite": false,
+    "artist": "Maroon 5",
+    "mp3": "Maroon 5 - This Love.mp3",
+    "title": "This Love",
+    "tuning": "5 String"
+  },
+  {
+    "number": 147,
+    "favourite": false,
+    "artist": "Rixton",
+    "mp3": "Rixton - Me And My Broken Heart.mp3",
+    "title": "Me And My Broken Heart",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 148,
+    "favourite": false,
+    "artist": "Avril Lavigne",
+    "mp3": "Avril Lavigne - What the Hell.mp3",
+    "title": "What The Hell",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 150,
+    "favourite": false,
+    "artist": "Ed Sheeran",
+    "mp3": "Ed Sheeran - Shape Of You.mp3",
+    "title": "Shape Of You",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 151,
+    "favourite": false,
+    "artist": "Ed Sheeran",
+    "mp3": "Ed Sheeran - Lego House.mp3",
+    "title": "Lego House",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 152,
+    "favourite": false,
+    "artist": "Ed Sheeran",
+    "mp3": "Ed Sheeran - Castle on the Hill.mp3",
+    "title": "Castle On The Hill",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 153,
+    "favourite": false,
+    "artist": "Misc. Television",
+    "mp3": "Geek Music - Red Dwarf Theme.mp3",
+    "title": "Red Dwarf Theme",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 154,
+    "favourite": false,
+    "artist": "Starkid",
+    "mp3": "Original StarKid Cast of Nerdy Prudes Must Die - High School Is Killing Me.mp3",
+    "title": "NPMD - High School Is Killing Me",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 155,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Thomas Newman - Steal The Show.mp3",
+    "title": "Elemental Steal The Show",
+    "tuning": "5 String"
+  },
+  {
+    "number": 156,
+    "favourite": false,
+    "artist": "Coldplay",
+    "mp3": "Coldplay - Viva La Vida.mp3",
+    "title": "Viva La Vida",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 157,
+    "favourite": false,
+    "artist": "Ed Sheeran",
+    "mp3": "Ed Sheeran - Thinking out Loud.mp3",
+    "title": "Thinking Out Loud",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 158,
+    "favourite": false,
+    "artist": "Cyndi Lauper",
+    "mp3": "Cyndi Lauper - Time After Time.mp3",
+    "title": "Time After Time",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 159,
+    "favourite": false,
+    "artist": "Hozier",
+    "mp3": "Hozier - Too Sweet.mp3",
+    "title": "Too Sweet",
+    "tuning": "5 String"
+  },
+  {
+    "number": 160,
+    "favourite": false,
+    "artist": "Dexys Midnight Runners",
+    "mp3": "Dexys Midnight Runners - Come On Eileen.mp3",
+    "title": "Come On Eileen",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 161,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Various Artists - Perry the Platypus Theme.mp3",
+    "title": "Phineas And Ferb Perry The Platypus Theme",
+    "tuning": "5 String"
+  },
+  {
+    "number": 162,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Alessia Cara - How Far I'll Go - From \"Moana\".mp3",
+    "title": "Moana How Far I'll Go",
+    "tuning": "5 String"
+  },
+  {
+    "number": 163,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Cheryl Freeman; LaChanze; Lillias White; Susan Egan; Vaneese Thomas - I Won't Say (I'm In Love).mp3",
+    "title": "Hercules I Wont Say I'm In Love",
+    "tuning": "5 String"
+  },
+  {
+    "number": 164,
+    "favourite": false,
+    "artist": "Adele",
+    "mp3": "Adele - Rumour Has It.mp3",
+    "title": "Rumour Has It",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 165,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Lin-Manuel Miranda - We Don't Talk About Bruno.mp3",
+    "title": "Encanto We Dont Talk About Bruno",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 166,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Various Artists - When Will My Life Begin?.mp3",
+    "title": "Tangled When Will My Life Begin",
+    "tuning": "5 String"
+  },
+  {
+    "number": 167,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Jessica Darrow - Surface Pressure.mp3",
+    "title": "Encanto Surface Pressure",
+    "tuning": "5 String"
+  },
+  {
+    "number": 168,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Jason Weaver; Laura Williams; Rowan Atkinson - I Just Can't Wait to Be King.mp3",
+    "title": "The Lion King I Just Cant Wait To Be King",
+    "tuning": "5 String"
+  },
+  {
+    "number": 169,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Randy Newman - You've Got a Friend in Me.mp3",
+    "title": "Toy Story You've Got A Friend In Me",
+    "tuning": "5 String"
+  },
+  {
+    "number": 170,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Lin-Manuel Miranda - You're Welcome.mp3",
+    "title": "Moana You're Welcome",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 171,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Idina Menzel - Let It Go - From \"Frozen\"-Soundtrack Version.mp3",
+    "title": "Frozen Let It Go",
+    "tuning": "5 String"
+  },
+  {
+    "number": 172,
+    "favourite": false,
+    "artist": "James Bay",
+    "mp3": "James Bay - Let It Go.mp3",
+    "title": "Let It Go",
+    "tuning": "DGCF"
+  },
+  {
+    "number": 173,
+    "favourite": false,
+    "artist": "Foreigner",
+    "mp3": "Foreigner - Cold as Ice.mp3",
+    "title": "Cold As Ice",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 174,
+    "favourite": false,
+    "artist": "Bill Withers",
+    "mp3": "Bill Withers - Lovely Day.mp3",
+    "title": "Lovely Day",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 175,
+    "favourite": false,
+    "artist": "Adele",
+    "mp3": "Adele - Skyfall.mp3",
+    "title": "Skyfall",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 176,
+    "favourite": false,
+    "artist": "John Denver",
+    "mp3": "Bon Jovi - Livin' On A Prayer.mp3",
+    "title": "Leaving On A Jet Plane",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 177,
+    "favourite": false,
+    "artist": "Journey",
+    "mp3": "Journey - Don't Stop Believin'.mp3",
+    "title": "Dont Stop Believin'",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 178,
+    "favourite": false,
+    "artist": "Stealers Wheel",
+    "mp3": "Stealers Wheel - Stuck In The Middle With You.mp3",
+    "title": "Stuck In The Middle With You",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 179,
+    "favourite": false,
+    "artist": "Cher",
+    "mp3": "Cher - Believe.mp3",
+    "title": "Believe",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 180,
+    "favourite": false,
+    "artist": "Frank Sinatra",
+    "mp3": "Don Costa; Frank Sinatra - My Way - 2008 Remastered.mp3",
+    "title": "My Way",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 181,
+    "favourite": false,
+    "artist": "The Beach Boys",
+    "mp3": "The Beach Boys - Kokomo.mp3",
+    "title": "Kokomo",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 182,
+    "favourite": false,
+    "artist": "The Shadows",
+    "mp3": "The Shadows - Apache.mp3",
+    "title": "Apache",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 183,
+    "favourite": false,
+    "artist": "Capital Cities",
+    "mp3": "Capital Cities - Safe And Sound.mp3",
+    "title": "Safe And Sound",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 184,
+    "favourite": false,
+    "artist": "AC/DC",
+    "mp3": "AC-DC - You Shook Me All Night Long.mp3",
+    "title": "You Shook Me All Night Long",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 185,
+    "favourite": false,
+    "artist": "Arctic Monkeys",
+    "mp3": "Arctic Monkeys - Do I Wanna Know?.mp3",
+    "title": "Do I Wanna Know",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 186,
+    "favourite": false,
+    "artist": "Cher",
+    "mp3": "Cher - If I Could Turn Back Time.mp3",
+    "title": "If I Could Turn Back Time",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 187,
+    "favourite": false,
+    "artist": "Keane",
+    "mp3": "Lily Allen - Somewhere Only We Know.mp3",
+    "title": "Somewhere Only We Know",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 188,
+    "favourite": false,
+    "artist": "Stephen Sanchez",
+    "mp3": "Stephen Sanchez - Until I Found You.mp3",
+    "title": "Until I Found You",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 189,
+    "favourite": false,
+    "artist": "John Denver",
+    "mp3": "John Denver - Take Me Home, Country Roads - Rerecorded.mp3",
+    "title": "Take Me Home Country Roads",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 190,
+    "favourite": false,
+    "artist": "Misc. Soundtrack",
+    "mp3": "Lady Gaga - Shallow.mp3",
+    "title": "A Star Is Born Shallow",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 191,
+    "favourite": false,
+    "artist": "Passenger",
+    "mp3": "Passenger - Let Her Go.mp3",
+    "title": "Let Her Go",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 192,
+    "favourite": false,
+    "artist": "Tom Odell",
+    "mp3": "Tom Odell - Another Love.mp3",
+    "title": "Another Love",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 193,
+    "favourite": false,
+    "artist": "Miley Cyrus",
+    "mp3": "Miley Cyrus - Flowers.mp3",
+    "title": "Flowers",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 194,
+    "favourite": false,
+    "artist": "Bryan Adams",
+    "mp3": "Bryan Adams; Melanie C - When You're Gone.mp3",
+    "title": "When You're Gone",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 195,
+    "favourite": false,
+    "artist": "Stevie Wonder",
+    "mp3": "Stevie Wonder - Signed, Sealed, Delivered (I'm Yours).mp3",
+    "title": "Signed Sealed Delivered I'm Yours",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 196,
+    "favourite": false,
+    "artist": "Misc. Soundtrack",
+    "mp3": "Bill Medley; Jennifer Warnes - (I've Had) The Time Of My Life - theme from the motion picture \"Dirty Dancing\".mp3",
+    "spotify_id": null,
+    "title": "Dirty Dancing I've Had The Time Of My Life",
+    "tuning": "5 String"
+  },
+  {
+    "number": 197,
+    "favourite": false,
+    "artist": "Train",
+    "mp3": "Train - Drive By.mp3",
+    "title": "Drive By",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 198,
+    "favourite": false,
+    "artist": "Pharrell Williams",
+    "mp3": "Pharrell Williams - Freedom.mp3",
+    "title": "Freedom",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 199,
+    "favourite": false,
+    "artist": "Paolo Nutini",
+    "mp3": "Paolo Nutini - Candy.mp3",
+    "title": "Candy",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 200,
+    "favourite": false,
+    "artist": "Walter Murphy",
+    "mp3": "Walter Murphy - A Fifth Of Beethoven.mp3",
+    "title": "A Fifth Of Beethoven",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 201,
+    "favourite": false,
+    "artist": "Paolo Nutini",
+    "mp3": "Paolo Nutini - Last Request.mp3",
+    "title": "Last Request",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 202,
+    "favourite": false,
+    "artist": "Paolo Nutini",
+    "mp3": "Paolo Nutini - New Shoes.mp3",
+    "title": "New Shoes",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 203,
+    "favourite": false,
+    "artist": "Daniel Powter",
+    "mp3": "Daniel Powter - Bad Day.mp3",
+    "title": "Bad Day",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 204,
+    "favourite": false,
+    "artist": "Michael Jackson",
+    "mp3": "Jeremy Lubbock; Michael Jackson - Billie Jean.mp3",
+    "title": "Billie Jean",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 205,
+    "favourite": false,
+    "artist": "Mark Ronson",
+    "mp3": "Bruno Mars; Mark Ronson - Uptown Funk (feat. Bruno Mars).mp3",
+    "title": "Uptown Funk",
+    "tuning": "5 String"
+  },
+  {
+    "number": 206,
+    "favourite": false,
+    "artist": "Adele",
+    "mp3": "Adele - Rolling in the Deep.mp3",
+    "title": "Rolling In The Deep",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 207,
+    "favourite": false,
+    "artist": "Cream",
+    "mp3": "Cream - Sunshine Of Your Love.mp3",
+    "title": "Sunshine Of Your Love",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 208,
+    "favourite": false,
+    "artist": "Bay City Rollers",
+    "mp3": "Bay City Rollers - Bye Bye Baby.mp3",
+    "title": "Bye Bye Baby",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 209,
+    "favourite": false,
+    "artist": "Ben E. King",
+    "mp3": "Ben E. King - Stand By Me.mp3",
+    "title": "Stand By Me",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 210,
+    "favourite": false,
+    "artist": "The Kinks",
+    "mp3": "The Kinks - Waterloo Sunset.mp3",
+    "title": "Waterloo Sunset",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 211,
+    "favourite": false,
+    "artist": "Elton John",
+    "mp3": "Elton John - Your Song.mp3",
+    "title": "Your Song",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 212,
+    "favourite": false,
+    "artist": "Panic! At The Disco",
+    "mp3": "Panic! At The Disco - High Hopes.mp3",
+    "title": "High Hopes",
+    "tuning": "5 String"
+  },
+  {
+    "number": 213,
+    "favourite": false,
+    "artist": "Bruno Mars",
+    "mp3": "Bruno Mars - Locked out of Heaven.mp3",
+    "title": "Locked Out Of Heaven",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 214,
+    "favourite": false,
+    "artist": "M83",
+    "mp3": "M83 - Midnight City.mp3",
+    "spotify_id": null,
+    "title": "Midnight City",
+    "tuning": "5 String"
+  },
+  {
+    "number": 215,
+    "favourite": false,
+    "artist": "The Lumineers",
+    "mp3": "The Lumineers - Ophelia.mp3",
+    "title": "Ophelia",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 216,
+    "favourite": false,
+    "artist": "Lukas Graham",
+    "mp3": "Lukas Graham - 7 Years.mp3",
+    "title": "Mama Said",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 217,
+    "favourite": false,
+    "artist": "Mumford & Sons",
+    "mp3": "Mumford & Sons - Little Lion Man.mp3",
+    "title": "Little Lion Man",
+    "tuning": "Drop D"
+  },
+  {
+    "number": 218,
+    "favourite": false,
+    "artist": "Misc. Musicals",
+    "mp3": "Various Artists - Travel Song.mp3",
+    "title": "Shrek The Musical Travel Song",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 219,
+    "favourite": false,
+    "artist": "Misc. Musicals",
+    "mp3": "Christopher Sieber; Shrek Ensemble - What's Up, Duloc?.mp3",
+    "title": "Shrek The Musical Whats Up Duloc",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 220,
+    "favourite": false,
+    "artist": "Misc. Musicals",
+    "mp3": "Brian D'Arcy James; Jacob Ming-Trent; Rachel Stern - Overture-Big Bright Beautiful World.mp3",
+    "title": "Shrek The Musical Big Bright Beautiful World",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 221,
+    "favourite": false,
+    "artist": "Ed Sheeran",
+    "mp3": "Ed Sheeran - Perfect.mp3",
+    "title": "Sing",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 222,
+    "favourite": false,
+    "artist": "The Kinks",
+    "mp3": "The Kinks - All Day and All of the Night.mp3",
+    "title": "All Day And All Of The Night",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 223,
+    "favourite": false,
+    "artist": "Paolo Nutini",
+    "mp3": "Paolo Nutini - Pencil Full of Lead.mp3",
+    "title": "Pencil Full Of Lead",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 224,
+    "favourite": false,
+    "artist": "Misc. Soundtrack",
+    "mp3": "John Debney, Alan Silvestri, Royal Scottish National Orchestra - Back To The Future - Back To The Future.mp3",
+    "title": "Back To The Future Theme",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 225,
+    "favourite": false,
+    "artist": "Tom Cardy",
+    "mp3": "Tom Cardy - Hey I Don't Work Here.mp3",
+    "title": "Hey I Dont Work Here",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 226,
+    "favourite": false,
+    "artist": "Ava Max",
+    "mp3": "Ava Max - Kings & Queens.mp3",
+    "title": "Kings And Queens",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 227,
+    "favourite": false,
+    "artist": "One Direction",
+    "mp3": "One Direction - What Makes You Beautiful.mp3",
+    "title": "What Makes You Beautiful",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 228,
+    "favourite": false,
+    "artist": "Chris Cornell",
+    "mp3": "Chris Cornell - You Know My Name - From \"Casino Royale\" Soundtrack.mp3",
+    "title": "You Know My Name",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 229,
+    "favourite": false,
+    "artist": "Sara Bareilles",
+    "mp3": "Sara Bareilles - Love Song.mp3",
+    "title": "Love Song",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 230,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Kristen Bell; Santino Fontana - Love Is an Open Door - From \"Frozen\"-Soundtrack Version.mp3",
+    "title": "Frozen Love Is An Open Door",
+    "tuning": "5 String"
+  },
+  {
+    "number": 231,
+    "favourite": false,
+    "artist": "Wham!",
+    "mp3": "Wham! - I'm Your Man.mp3",
+    "title": "I'm Your Man",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 232,
+    "favourite": false,
+    "artist": "Eagle-Eye Cherry",
+    "mp3": "Eagle-Eye Cherry - Save Tonight.mp3",
+    "title": "Save Tonight",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 233,
+    "favourite": false,
+    "artist": "Ludwig Van Beethoven",
+    "mp3": "Ludwig van Beethoven - Symphony No. 5 In C Minor Part 1.mp3",
+    "title": "5Th Symphony",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 234,
+    "favourite": false,
+    "artist": "Elvis Presley",
+    "mp3": "Elvis Presley - (You're The) Devil in Disguise.mp3",
+    "title": "You're The Devil In Disguise",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 235,
+    "favourite": false,
+    "artist": "Yes",
+    "mp3": "Yes - Owner Of A Lonely Heart.mp3",
+    "title": "Owner Of A Lonely Heart",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 236,
+    "favourite": false,
+    "artist": "Aretha Franklin",
+    "mp3": "Aretha Franklin - Respect.mp3",
+    "title": "Respect",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 237,
+    "favourite": false,
+    "artist": "The Police",
+    "mp3": "The Police - Every Little Thing She Does Is Magic.mp3",
+    "title": "Every Little Thing She Does Is Magic",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 238,
+    "favourite": false,
+    "artist": "Misc. Soundtrack",
+    "mp3": "Amanda Bynes; Elijah Kelley; John Travolta; Motion Picture Cast of Hairspray; Nikki Blonsky; Queen Latifah; Zac Efron - You Can't Stop The Beat.mp3",
+    "title": "Hairspray You Cant Stop The Beat",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 239,
+    "favourite": false,
+    "artist": "George Harrison",
+    "mp3": "George Harrison - Got My Mind Set on You.mp3",
+    "title": "Got My Mind Set On You",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 240,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "The Disney Afternoon Studio Chorus - Duck Tales Theme - From “Duck Tales“.mp3",
+    "title": "Ducktales Theme",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 241,
+    "favourite": false,
+    "artist": "Depeche Mode",
+    "mp3": "Depeche Mode - Just Can't Get Enough.mp3",
+    "title": "Just Cant Get Enough",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 242,
+    "favourite": false,
+    "artist": "Avicii",
+    "mp3": "Avicii - Hey Brother.mp3",
+    "title": "Hey Brother",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 243,
+    "favourite": false,
+    "artist": "Busted",
+    "mp3": "Busted - Crashed The Wedding.mp3",
+    "title": "Crashed The Wedding",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 244,
+    "favourite": false,
+    "artist": "James",
+    "mp3": "James - Sit Down.mp3",
+    "title": "Sit Down",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 245,
+    "favourite": false,
+    "artist": "The Housemartins",
+    "mp3": "The Housemartins - Happy Hour.mp3",
+    "title": "Happy Hour",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 246,
+    "favourite": false,
+    "artist": "The Fratellis",
+    "mp3": "The Fratellis - Chelsea Dagger.mp3",
+    "title": "Chelsea Dagger",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 247,
+    "favourite": false,
+    "artist": "Mika",
+    "mp3": "MIKA - We Are Golden.mp3",
+    "title": "We Are Golden",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 248,
+    "favourite": false,
+    "artist": "The Boo Radleys",
+    "mp3": "The Boo Radleys - Wake up Boo!.mp3",
+    "title": "Wake Up Boo",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 249,
+    "favourite": false,
+    "artist": "Pat Benatar",
+    "mp3": "Catherine Zeta-Jones - Hit Me With Your Best Shot.mp3",
+    "title": "Hit Me With Your Best Shot",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 250,
+    "favourite": false,
+    "artist": "The Blues Brothers",
+    "mp3": "Ira Newborn; The Blues Brothers - Everybody Needs Somebody to Love.mp3",
+    "title": "Everybody Needs Somebody To Love",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 251,
+    "favourite": false,
+    "artist": "Barry Manilow",
+    "mp3": "Barry Manilow - Copacabana (At the Copa).mp3",
+    "title": "Copacabana",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 252,
+    "favourite": false,
+    "artist": "Bo Burnham",
+    "mp3": "Bo Burnham - Welcome to The Internet.mp3",
+    "title": "Welcome To The Internet",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 253,
+    "favourite": false,
+    "artist": "Ike & Tina Turner",
+    "mp3": "Tina Turner - Proud Mary.mp3",
+    "title": "Proud Mary",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 254,
+    "favourite": false,
+    "artist": "Will Young",
+    "mp3": "Will Young - Love Revolution.mp3",
+    "title": "Love Revolution",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 255,
+    "favourite": false,
+    "artist": "Queen",
+    "mp3": "David Bowie; Queen - Under Pressure.mp3",
+    "title": "Under Pressure",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 256,
+    "favourite": false,
+    "artist": "Men At Work",
+    "mp3": "Men At Work - Down Under.mp3",
+    "title": "Down Under",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 257,
+    "favourite": false,
+    "artist": "Queen",
+    "mp3": "Queen - I Want To Break Free - Single Remix.mp3",
+    "title": "I Want To Break Free",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 258,
+    "favourite": false,
+    "artist": "The Yogscast",
+    "mp3": "The Yogscast - Diggy Diggy Hole.mp3",
+    "title": "Diggy Diggy Hole",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 259,
+    "favourite": false,
+    "artist": "Sam Ryder",
+    "mp3": "Sam Ryder - SPACE MAN.mp3",
+    "title": "Space Man",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 260,
+    "favourite": false,
+    "artist": "ABBA",
+    "mp3": "ABBA - Gimme! Gimme! Gimme! (A Man After Midnight).mp3",
+    "title": "Gimme Gimme Gimme",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 261,
+    "favourite": false,
+    "artist": "Mungo Jerry",
+    "mp3": "Mungo Jerry - In the Summertime.mp3",
+    "title": "In The Summertime",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 262,
+    "favourite": false,
+    "artist": "B Bumble And The Stingers",
+    "mp3": "B. Bumble & The Stingers - Nut Rocker (Original Mix).mp3",
+    "title": "Nut Rocker",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 263,
+    "favourite": false,
+    "artist": "Frank Sinatra",
+    "mp3": "Count Basie; Frank Sinatra; Quincy Jones - Fly Me To The Moon (In Other Words).mp3",
+    "title": "Fly Me To The Moon",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 264,
+    "favourite": false,
+    "artist": "The Clash",
+    "mp3": "The Clash - Should I Stay or Should I Go - Remastered.mp3",
+    "title": "Should I Stay Or Should I Go",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 265,
+    "favourite": false,
+    "artist": "The Corrs",
+    "mp3": "The Corrs - Breathless.mp3",
+    "title": "Breathless",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 266,
+    "favourite": false,
+    "artist": "Crosby, Stills, Nash & Young",
+    "mp3": "Madness - Our House.mp3",
+    "title": "Our House",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 267,
+    "favourite": false,
+    "artist": "Tom Petty",
+    "mp3": "Tom Petty - Free Fallin'.mp3",
+    "title": "Free Fallin",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 268,
+    "favourite": false,
+    "artist": "Electric Light Orchestra",
+    "mp3": "Electric Light Orchestra - Don't Bring Me Down.mp3",
+    "title": "Dont Bring Me Down",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 269,
+    "favourite": false,
+    "artist": "Kaiser Chiefs",
+    "mp3": "Kaiser Chiefs - Ruby.mp3",
+    "title": "Ruby",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 270,
+    "favourite": false,
+    "artist": "ABBA",
+    "mp3": "ABBA - Thank You For The Music.mp3",
+    "title": "Thank You For The Music",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 271,
+    "favourite": false,
+    "artist": "ABBA",
+    "mp3": "ABBA - Lay All Your Love On Me.mp3",
+    "title": "Lay All Your Love On Me",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 272,
+    "favourite": false,
+    "artist": "Misc. Soundtrack",
+    "mp3": "Eddie Perfect - Dead Mom.mp3",
+    "title": "Beetlejuice Dead Mom",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 273,
+    "favourite": false,
+    "artist": "The Killers",
+    "mp3": "The Killers - Spaceman.mp3",
+    "title": "Spaceman",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 274,
+    "favourite": false,
+    "artist": "Green Day",
+    "mp3": "Green Day - American Idiot.mp3",
+    "title": "American Idiot",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 275,
+    "favourite": false,
+    "artist": "Wings",
+    "mp3": "Wings - Live And Let Die - 2018 Remaster.mp3",
+    "title": "Live And Let Die",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 276,
+    "favourite": false,
+    "artist": "Elton John",
+    "mp3": "Elton John; Kiki Dee - Don't Go Breaking My Heart.mp3",
+    "title": "Dont Go Breaking My Heart",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 277,
+    "favourite": false,
+    "artist": "Pharrell Williams",
+    "mp3": "Pharrell Williams - Happy - From Despicable Me 2.mp3",
+    "title": "Happy",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 278,
+    "favourite": false,
+    "artist": "Rag 'n' Bone Man",
+    "mp3": "Rag'n'Bone Man - Human.mp3",
+    "title": "Human",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 279,
+    "favourite": false,
+    "artist": "The Killers",
+    "mp3": "The Killers - Human.mp3",
+    "title": "Human",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 280,
+    "favourite": false,
+    "artist": "Queen",
+    "mp3": "Queen - Crazy Little Thing Called Love - Remastered 2011.mp3",
+    "title": "Crazy Little Thing Called Love",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 281,
+    "favourite": false,
+    "artist": "MKTO",
+    "mp3": "MKTO - Classic.mp3",
+    "title": "Classic",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 282,
+    "favourite": false,
+    "artist": "Tones And I",
+    "mp3": "Tones And I - Dance Monkey.mp3",
+    "title": "Dance Monkey",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 283,
+    "favourite": false,
+    "artist": "Kings Of Leon",
+    "mp3": "Kings of Leon - Sex on Fire.mp3",
+    "title": "Sex On Fire",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 284,
+    "favourite": false,
+    "artist": "Robbie Williams",
+    "mp3": "Robbie Williams - She's The One.mp3",
+    "title": "Shes The One",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 285,
+    "favourite": false,
+    "artist": "P!NK",
+    "mp3": "P!nk - Raise Your Glass.mp3",
+    "title": "Raise Your Glass",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 286,
+    "favourite": false,
+    "artist": "P!NK",
+    "mp3": "Nate Ruess; P!nk - Just Give Me a Reason (feat. Nate Ruess).mp3",
+    "title": "Just Give Me A Reason",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 287,
+    "favourite": false,
+    "artist": "Phil Collins",
+    "mp3": "Martyn Ford; Phil Collins; The Mountain Fjord Orchestra - You Can't Hurry Love - 2016 Remaster.mp3",
+    "title": "You Cant Hurry Love",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 288,
+    "favourite": false,
+    "artist": "John Farnham",
+    "mp3": "John Farnham - You're the Voice.mp3",
+    "title": "Youre The Voice",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 289,
+    "favourite": false,
+    "artist": "The Darkness",
+    "mp3": "The Darkness - I Believe in a Thing Called Love.mp3",
+    "title": "I Believe In A Thing Called Love",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 290,
+    "favourite": false,
+    "artist": "Billy Joel",
+    "mp3": "Billy Joel - Piano Man.mp3",
+    "title": "Piano Man",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 291,
+    "favourite": false,
+    "artist": "Ray Parker Jr.",
+    "mp3": "Ray Parker Jr. - Ghostbusters.mp3",
+    "title": "Ghostbusters",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 292,
+    "favourite": false,
+    "artist": "Clean Bandit",
+    "mp3": "Clean Bandit; Jess Glynne - Rather Be (feat. Jess Glynne).mp3",
+    "title": "Rather Be",
+    "tuning": "5 String"
+  },
+  {
+    "number": 293,
+    "favourite": false,
+    "artist": "Caesars (Caesars Palace)",
+    "mp3": "Caesars - Jerk It Out.mp3",
+    "title": "Jerk It Out",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 294,
+    "favourite": false,
+    "artist": "Smash Mouth",
+    "mp3": "Smash Mouth - All Star.mp3",
+    "title": "All Star",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 295,
+    "favourite": false,
+    "artist": "Madness",
+    "mp3": "Madness - Baggy Trousers - 2010 Remaster.mp3",
+    "title": "Baggy Trousers",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 296,
+    "favourite": false,
+    "artist": "Bananarama",
+    "mp3": "Bananarama - Venus.mp3",
+    "title": "Venus",
+    "tuning": "5 String"
+  },
+  {
+    "number": 297,
+    "favourite": false,
+    "artist": "Backstreet Boys",
+    "mp3": "Backstreet Boys - Everybody (Backstreet's Back) - Radio Edit.mp3",
+    "title": "Everybody",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 298,
+    "favourite": false,
+    "artist": "Pet Shop Boys",
+    "mp3": "Pet Shop Boys - Go West - 2003 Remaster.mp3",
+    "title": "Go West",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 299,
+    "favourite": false,
+    "artist": "Supergrass",
+    "mp3": "Supergrass - Alright.mp3",
+    "title": "Alright",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 300,
+    "favourite": false,
+    "artist": "Backstreet Boys",
+    "mp3": "Backstreet Boys - I Want It That Way.mp3",
+    "title": "I Want It That Way",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 301,
+    "favourite": false,
+    "artist": "New Radicals",
+    "mp3": "New Radicals - You Get What You Give.mp3",
+    "title": "You Get What You Give",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 302,
+    "favourite": false,
+    "artist": "Scouting For Girls",
+    "mp3": "Scouting For Girls - She's So Lovely.mp3",
+    "title": "Shes So Lovely",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 304,
+    "favourite": false,
+    "artist": "Tiffany",
+    "mp3": "Tiffany - I Think We're Alone Now.mp3",
+    "title": "I Think Were Alone Now",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 305,
+    "favourite": false,
+    "artist": "The Bangles",
+    "mp3": "The Bangles - Manic Monday.mp3",
+    "title": "Manic Monday",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 306,
+    "favourite": false,
+    "artist": "Bonnie Tyler",
+    "mp3": "Bonnie Tyler - Holding Out for a Hero - Single Version.mp3",
+    "title": "Holding Out For A Hero",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 307,
+    "favourite": false,
+    "artist": "KC And The Sunshine Band",
+    "mp3": "KC & The Sunshine Band - Give It Up.mp3",
+    "title": "Give It Up",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 308,
+    "favourite": false,
+    "artist": "Kim Wilde",
+    "mp3": "Kim Wilde - Kids In America.mp3",
+    "title": "Kids In America",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 309,
+    "favourite": false,
+    "artist": "Men Without Hats",
+    "mp3": "Men Without Hats - The Safety Dance.mp3",
+    "title": "The Safety Dance",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 310,
+    "favourite": false,
+    "artist": "Philip Oakey",
+    "mp3": "Giorgio Moroder; Phil Oakey - Together In Electric Dreams.mp3",
+    "title": "Together In Electric Dreams",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 311,
+    "favourite": false,
+    "artist": "James Blunt",
+    "mp3": "James Blunt - Goodbye My Lover.mp3",
+    "title": "Goodbye My Lover",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 312,
+    "favourite": false,
+    "artist": "Belinda Carlisle",
+    "mp3": "Belinda Carlisle - Heaven Is A Place On Earth.mp3",
+    "title": "Heaven Is A Place On Earth",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 313,
+    "favourite": false,
+    "artist": "The Shadows",
+    "mp3": "The Shadows - Foot Tapper.mp3",
+    "title": "Foot Tapper",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 314,
+    "favourite": false,
+    "artist": "Fleetwood Mac",
+    "mp3": "Fleetwood Mac - Go Your Own Way.mp3",
+    "title": "Go Your Own Way",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 315,
+    "favourite": false,
+    "artist": "Chumbawamba",
+    "mp3": "Chumbawamba - Tubthumping.mp3",
+    "title": "Tubthumping",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 316,
+    "favourite": false,
+    "artist": "Pulp",
+    "mp3": "Pulp - Disco 2000.mp3",
+    "title": "Disco 2000",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 317,
+    "favourite": false,
+    "artist": "Ricky Martin",
+    "mp3": "Ricky Martin - Livin' la Vida Loca.mp3",
+    "title": "Livin La Vida Loca",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 318,
+    "favourite": false,
+    "artist": "Barenaked Ladies",
+    "mp3": "Barenaked Ladies - One Week.mp3",
+    "title": "One Week",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 319,
+    "favourite": false,
+    "artist": "Chesney Hawkes",
+    "mp3": "Chesney Hawkes - The One And Only.mp3",
+    "title": "The One And Only",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 320,
+    "favourite": false,
+    "artist": "Deep Blue Something",
+    "mp3": "Deep Blue Something - Breakfast At Tiffany's.mp3",
+    "title": "Breakfast At Tiffanys",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 321,
+    "favourite": false,
+    "artist": "David Bowie",
+    "mp3": "David Bowie - Rebel Rebel - 2016 Remaster.mp3",
+    "title": "Rebel Rebel",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 322,
+    "favourite": false,
+    "artist": "Gloria Gaynor",
+    "mp3": "Gloria Gaynor - I Will Survive - Single Version.mp3",
+    "title": "I Will Survive",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 323,
+    "favourite": false,
+    "artist": "Busted",
+    "mp3": "Busted - What I Go To School For.mp3",
+    "title": "What I Go To School For",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 324,
+    "favourite": false,
+    "artist": "R.E.M.",
+    "mp3": "R.E.M. - Everybody Hurts.mp3",
+    "title": "Everybody Hurts",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 325,
+    "favourite": false,
+    "artist": "Phil Collins",
+    "mp3": "Phil Collins - Two Hearts.mp3",
+    "title": "Two Hearts",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 326,
+    "favourite": false,
+    "artist": "Ok Go",
+    "mp3": "OK Go - Here It Goes Again.mp3",
+    "title": "Here It Goes Again",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 327,
+    "favourite": false,
+    "artist": "Rednex",
+    "mp3": "Rednex - Cotton Eye Joe.mp3",
+    "title": "Cotton Eye Joe",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 328,
+    "favourite": false,
+    "artist": "R.E.M.",
+    "mp3": "R.E.M. - Shiny Happy People.mp3",
+    "title": "Shiny Happy People",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 329,
+    "favourite": false,
+    "artist": "Blur",
+    "mp3": "Blur - Parklife - 2012 Remaster.mp3",
+    "title": "Parklife",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 330,
+    "favourite": false,
+    "artist": "The Feeling",
+    "mp3": "The Feeling - Love It When You Call.mp3",
+    "title": "Love It When You Call",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 331,
+    "favourite": false,
+    "artist": "Misc. Soundtrack",
+    "mp3": "Alex Brightman; Beetlejuice Original Broadway Cast Recording Ensemble; Kris Kukul - The Whole \"Being Dead\" Thing.mp3",
+    "title": "Beetlejuice The Whole “Being Dead” Thing",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 332,
+    "favourite": false,
+    "artist": "Hot Butter",
+    "mp3": "Hot Butter - Popcorn.mp3",
+    "title": "Popcorn",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 333,
+    "favourite": false,
+    "artist": "Matilda",
+    "mp3": "Matilda the Musical Original Cast - Revolting Children.mp3",
+    "title": "Revolting Children",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 334,
+    "favourite": false,
+    "artist": "Misc. Television",
+    "mp3": "Geek Music - We Are Number One (From \"Lazy Town\").mp3",
+    "title": "Lazytown We Are Number One",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 335,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Alan Menken - A Whole New World.mp3",
+    "title": "Aladdin A Whole New World",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 336,
+    "favourite": false,
+    "artist": "Billy Joel",
+    "mp3": "Billy Joel - She's Always a Woman.mp3",
+    "title": "Shes Always A Woman",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 337,
+    "favourite": false,
+    "artist": "Mcfly",
+    "mp3": "McFly - All About You.mp3",
+    "title": "I'll Be Ok",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 338,
+    "favourite": false,
+    "artist": "Misc. Soundtrack",
+    "mp3": "Alex Brightman; Beetlejuice Original Broadway Cast Recording Ensemble; Kerry Butler; Kris Kukul; Rob McClure - The Whole \"Being Dead\" Thing, Pt. 2.mp3",
+    "title": "Beetlejuice The Whole Being Dead Thing Pt2",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 339,
+    "favourite": false,
+    "artist": "Misc. Soundtrack",
+    "mp3": "Alex Brightman; Kerry Butler; Kris Kukul; Rob McClure; Sophia Anne Caruso - Say My Name.mp3",
+    "title": "Beetlejuice Say My Name",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 340,
+    "favourite": false,
+    "artist": "The Jackson 5",
+    "mp3": "The Jackson 5 - I Want You Back.mp3",
+    "title": "I Want You Back",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 341,
+    "favourite": false,
+    "artist": "The Jacksons",
+    "mp3": "MIKA - Blame It On The Girls.mp3",
+    "title": "Blame It On The Boogie",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 342,
+    "favourite": false,
+    "artist": "Mika",
+    "mp3": "MIKA - Blame It On The Girls.mp3",
+    "title": "Blame It On The Girls",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 343,
+    "favourite": false,
+    "artist": "Philip Bailey",
+    "mp3": "Philip Bailey - Easy Lover.mp3",
+    "title": "Easy Lover",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 344,
+    "favourite": false,
+    "artist": "Pointer Sisters",
+    "mp3": "The Pointer Sisters - I'm So Excited.mp3",
+    "title": "Im So Excited",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 345,
+    "favourite": false,
+    "artist": "The B-52'S",
+    "mp3": "The B-52's - Love Shack.mp3",
+    "title": "Love Shack",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 346,
+    "favourite": false,
+    "artist": "The Mamas & The Papas",
+    "mp3": "The Mamas & The Papas - California Dreamin' - Single Version.mp3",
+    "title": "California Dreamin",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 347,
+    "favourite": false,
+    "artist": "Queen",
+    "mp3": "Queen - Flash's Theme - Remastered 2011.mp3",
+    "title": "Flashs Theme",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 348,
+    "favourite": false,
+    "artist": "Billy Joel",
+    "mp3": "Billy Joel - My Life.mp3",
+    "title": "My Life",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 349,
+    "favourite": false,
+    "artist": "The Proclaimers",
+    "mp3": "The Proclaimers - I'm on My Way.mp3",
+    "title": "Im On My Way",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 350,
+    "favourite": false,
+    "artist": "Busted",
+    "mp3": "Busted - Year 3000.mp3",
+    "title": "Year 3000",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 351,
+    "favourite": false,
+    "artist": "The Four Seasons",
+    "mp3": "The Four Seasons - December, 1963 (Oh What a Night!).mp3",
+    "title": "December 1963 Oh What A Night",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 352,
+    "favourite": false,
+    "artist": "Billy Joel",
+    "mp3": "Billy Joel - Uptown Girl.mp3",
+    "title": "Uptown Girl",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 353,
+    "favourite": false,
+    "artist": "Smash Mouth",
+    "mp3": "Smash Mouth - I'm A Believer.mp3",
+    "title": "Im A Believer",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 354,
+    "favourite": false,
+    "artist": "The Foundations",
+    "mp3": "The Foundations - Build Me Up Buttercup.mp3",
+    "title": "Build Me Up Buttercup",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 355,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Chorus - Mulan; Disney; Donny Osmond - I'll Make a Man Out of You.mp3",
+    "title": "Mulan I'll Make A Man Out Of You",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 356,
+    "favourite": false,
+    "artist": "Toploader",
+    "mp3": "Toploader - Dancing in the Moonlight.mp3",
+    "title": "Dancing In The Moonlight",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 357,
+    "favourite": false,
+    "artist": "Mika",
+    "mp3": "MIKA - Love Today.mp3",
+    "title": "Love Today",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 358,
+    "favourite": false,
+    "artist": "Huey Lewis & The News",
+    "mp3": "Huey Lewis & The News - Back In Time.mp3",
+    "title": "Back In Time",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 359,
+    "favourite": false,
+    "artist": "Electric Light Orchestra",
+    "mp3": "Electric Light Orchestra; Louis Clark - Mr. Blue Sky.mp3",
+    "title": "Mr Blue Sky",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 360,
+    "favourite": false,
+    "artist": "Monty Python",
+    "mp3": "Monty Python - Always Look On The Bright Side Of Life.mp3",
+    "title": "Always Look On The Bright Side Of Life",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 361,
+    "favourite": false,
+    "artist": "Mika",
+    "mp3": "MIKA - Grace Kelly.mp3",
+    "title": "Grace Kelly",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 362,
+    "favourite": false,
+    "artist": "Scouting For Girls",
+    "mp3": "Scouting For Girls - Heartbeat.mp3",
+    "title": "Heartbeat",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 363,
+    "favourite": false,
+    "artist": "Phil Collins",
+    "mp3": "Phil Collins - On My Way.mp3",
+    "title": "On My Way",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 364,
+    "favourite": false,
+    "artist": "Ylvis",
+    "mp3": "Ylvis - The Fox (What Does the Fox Say?).mp3",
+    "title": "The Fox",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 365,
+    "favourite": false,
+    "artist": "Huey Lewis & The News",
+    "mp3": "Huey Lewis & The News - The Power Of Love.mp3",
+    "title": "The Power Of Love",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 366,
+    "favourite": false,
+    "artist": "Katrina And The Waves",
+    "mp3": "Katrina & The Waves - Walking On Sunshine.mp3",
+    "title": "Walking On Sunshine",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 367,
+    "favourite": false,
+    "artist": "The Monkees",
+    "mp3": "The Monkees - Daydream Believer.mp3",
+    "title": "Daydream Believer",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 368,
+    "favourite": false,
+    "artist": "S Club 7",
+    "mp3": "S Club - Reach.mp3",
+    "title": "Reach",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 369,
+    "favourite": false,
+    "artist": "Muse",
+    "mp3": "Muse - Will Of The People.mp3",
+    "title": "Will Of The People",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 370,
+    "favourite": false,
+    "artist": "Mcfly",
+    "mp3": "McFly; Taio Cruz - Shine A Light - Radio Edit.mp3",
+    "title": "Shine A Light",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 371,
+    "favourite": false,
+    "artist": "The Archies",
+    "mp3": "The Archies - Sugar, Sugar.mp3",
+    "title": "Sugar Sugar",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 372,
+    "favourite": false,
+    "artist": "Madness",
+    "mp3": "Madness - One Step Beyond - 2009 - Remaster.mp3",
+    "title": "One Step Beyond",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 373,
+    "favourite": false,
+    "artist": "Spice Girls",
+    "mp3": "Spice Girls - Wannabe.mp3",
+    "title": "Wannabe",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 374,
+    "favourite": false,
+    "artist": "The Rolling Stones",
+    "mp3": "The Rolling Stones - (I Can't Get No) Satisfaction - Mono.mp3",
+    "title": "I Cant Get No Satisfaction",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 375,
+    "favourite": false,
+    "artist": "ABBA",
+    "mp3": "ABBA - Mamma Mia.mp3",
+    "title": "Mamma Mia",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 376,
+    "favourite": false,
+    "artist": "Alphabeat",
+    "mp3": "Alphabeat - Fascination.mp3",
+    "title": "Fascination",
+    "tuning": "5 String"
+  },
+  {
+    "number": 377,
+    "favourite": false,
+    "artist": "Counting Crows",
+    "mp3": "Counting Crows - Accidentally In Love.mp3",
+    "title": "Accidentally In Love",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 378,
+    "favourite": false,
+    "artist": "Mcfly",
+    "mp3": "McFly - Love Is On The Radio.mp3",
+    "title": "Love Is On The Radio",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 379,
+    "favourite": false,
+    "artist": "Billy Joel",
+    "mp3": "Billy Joel - The Longest Time.mp3",
+    "title": "The Longest Time",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 380,
+    "favourite": false,
+    "artist": "Mcfly",
+    "mp3": "McFly - Five Colours In Her Hair.mp3",
+    "title": "5 Colours In Her Hair",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 381,
+    "favourite": false,
+    "artist": "Robbie Williams",
+    "mp3": "Robbie Williams - Zimmer: A Man For All Seasons.mp3",
+    "title": "A Man For All Seasons",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 382,
+    "favourite": false,
+    "artist": "Shakira",
+    "mp3": "Shakira - Try Everything.mp3",
+    "title": "Try Everything",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 383,
+    "favourite": false,
+    "artist": "Madness",
+    "mp3": "Madness - My Girl - 2009 Remaster.mp3",
+    "title": "My Girl",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 384,
+    "favourite": false,
+    "artist": "The Jam",
+    "mp3": "The Jam - Town Called Malice.mp3",
+    "title": "Town Called Malice",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 385,
+    "favourite": false,
+    "artist": "The Beatles",
+    "mp3": "The Beatles - Yesterday - Remastered 2015.mp3",
+    "title": "Yesterday",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 386,
+    "favourite": false,
+    "artist": "The Hoosiers",
+    "mp3": "The Hoosiers - Goodbye Mr A.mp3",
+    "title": "Goodbye Mr A",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 387,
+    "favourite": false,
+    "artist": "Michael Sembello",
+    "mp3": "Michael Sembello - Maniac.mp3",
+    "title": "Maniac",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 388,
+    "favourite": false,
+    "artist": "Misc. Soundtrack",
+    "mp3": "Various Artists - We're All In This Together.mp3",
+    "title": "High School Musical Were All In This Together",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 389,
+    "favourite": false,
+    "artist": "Earth, Wind & Fire",
+    "mp3": "Earth, Wind & Fire - September.mp3",
+    "title": "September",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 390,
+    "favourite": false,
+    "artist": "Scissor Sisters",
+    "mp3": "Scissor Sisters - I Don't Feel Like Dancin' - Radio Edit.mp3",
+    "title": "I Dont Feel Like Dancin'",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 391,
+    "favourite": false,
+    "artist": "S Club 7",
+    "mp3": "S Club - Bring It All Back.mp3",
+    "title": "Bring It All Back",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 392,
+    "favourite": false,
+    "artist": "Misc. Cartoons",
+    "mp3": "Cheryl Freeman; Chorus - Hercules; Disney; LaChanze; Lillias White; Roz Ryan; Tawatha Agee; Vaneese Thomas - Zero To Hero.mp3",
+    "title": "Hercules Zero To Hero",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 393,
+    "favourite": false,
+    "artist": "Bee Gees",
+    "mp3": "Bee Gees - More Than A Woman.mp3",
+    "title": "More Than A Woman",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 394,
+    "favourite": false,
+    "artist": "Avicii",
+    "mp3": "Avicii - Wake Me Up.mp3",
+    "title": "Wake Me Up",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 395,
+    "favourite": false,
+    "artist": "Amy Winehouse",
+    "mp3": "Amy Winehouse; Chris Elliott; Mark Ronson - Valerie (feat. Amy Winehouse) - Version Revisited.mp3",
+    "title": "Valerie",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 396,
+    "favourite": false,
+    "artist": "Amy Winehouse",
+    "mp3": "Amy Winehouse - Back To Black.mp3",
+    "title": "Back To Black",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 397,
+    "favourite": false,
+    "artist": "Dire Straits",
+    "mp3": "Dire Straits - Sultans Of Swing.mp3",
+    "title": "Sultans Of Swing",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 398,
+    "favourite": false,
+    "artist": "Mud",
+    "mp3": "Mud - Tiger Feet.mp3",
+    "title": "Tiger Feet",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 399,
+    "favourite": false,
+    "artist": "The Rembrandts",
+    "mp3": "The Rembrandts - I'll Be There for You - Theme From \"Friends\".mp3",
+    "title": "I'll Be There For You",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 400,
+    "favourite": false,
+    "artist": "Hall And Oates",
+    "mp3": "Daryl Hall & John Oates - You Make My Dreams (Come True).mp3",
+    "title": "You Make My Dreams",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 401,
+    "favourite": false,
+    "artist": "Misc. Soundtrack",
+    "mp3": "Kenny Loggins - Danger Zone.mp3",
+    "title": "Top Gun Danger Zone",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 402,
+    "favourite": false,
+    "artist": "Queen",
+    "mp3": "Queen - A Kind Of Magic - Remastered 2011.mp3",
+    "title": "A Kind Of Magic",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 403,
+    "favourite": false,
+    "artist": "S Club 7",
+    "mp3": "S Club - Don't Stop Movin'.mp3",
+    "title": "Dont Stop Movin",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 404,
+    "favourite": false,
+    "artist": "*Nsync",
+    "mp3": "*NSYNC - Bye Bye Bye.mp3",
+    "title": "Bye Bye Bye",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 405,
+    "favourite": false,
+    "artist": "Kool And The Gang",
+    "mp3": "Deodato; Kool & The Gang - Celebration - Single Version.mp3",
+    "title": "Celebration",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 406,
+    "favourite": false,
+    "artist": "Hozier",
+    "mp3": "Hozier - Take Me To Church.mp3",
+    "title": "Take Me To Church",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 407,
+    "favourite": false,
+    "artist": "Sigrid",
+    "mp3": "Sigrid - Strangers.mp3",
+    "title": "Strangers",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 408,
+    "favourite": false,
+    "artist": "Gala",
+    "mp3": "Gala - Freed From Desire.mp3",
+    "title": "Freed From Desire",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 409,
+    "favourite": false,
+    "artist": "Wheatus",
+    "mp3": "Wheatus - Teenage Dirtbag.mp3",
+    "title": "Teenage Dirtbag",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 410,
+    "favourite": false,
+    "artist": "The Cure",
+    "mp3": "The Cure - Friday I'm In Love.mp3",
+    "title": "Friday Im In Love",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 411,
+    "favourite": false,
+    "artist": "Wild Cherry",
+    "mp3": "Wild Cherry - Play That Funky Music.mp3",
+    "title": "Play That Funky Music",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 412,
+    "favourite": false,
+    "artist": "Oasis",
+    "mp3": "Oasis - Don't Look Back In Anger - Remastered.mp3",
+    "title": "Dont Look Back In Anger",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 413,
+    "favourite": false,
+    "artist": "Taylor Swift",
+    "mp3": "Taylor Swift - Shake It Off.mp3",
+    "title": "Shake It Off",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 414,
+    "favourite": false,
+    "artist": "Bryan Adams",
+    "mp3": "Bryan Adams - Summer Of '69.mp3",
+    "title": "Summer Of '69",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 415,
+    "favourite": false,
+    "artist": "Mumford & Sons",
+    "mp3": "Mumford & Sons - I Will Wait.mp3",
+    "title": "I Will Wait",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 416,
+    "favourite": false,
+    "artist": "Walk The Moon",
+    "mp3": "WALK THE MOON - Shut Up and Dance.mp3",
+    "title": "Shut Up And Dance",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 417,
+    "favourite": false,
+    "artist": "Arctic Monkeys",
+    "mp3": "Arctic Monkeys - Mardy Bum.mp3",
+    "title": "Mardy Bum",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 418,
+    "favourite": false,
+    "artist": "Britney Spears",
+    "mp3": "Britney Spears - Toxic.mp3",
+    "title": "Toxic",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 419,
+    "favourite": false,
+    "artist": "Stevie Wonder",
+    "mp3": "Stevie Wonder - Superstition.mp3",
+    "spotify_id": null,
+    "title": "Superstition",
+    "tuning": "5 String"
+  },
+  {
+    "number": 420,
+    "favourite": false,
+    "artist": "The Killers",
+    "mp3": "The Killers - Mr. Brightside.mp3",
+    "title": "Mr Brightside",
+    "tuning": "EbAbDbGb"
+  },
+  {
+    "number": 421,
+    "favourite": false,
+    "artist": "The Beatles",
+    "mp3": "The Beatles - Twist And Shout - Remastered 2009.mp3",
+    "title": "Twist And Shout",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 422,
+    "favourite": false,
+    "artist": "Fleetwood Mac",
+    "mp3": "Fleetwood Mac - Go Your Own Way.mp3",
+    "title": "Everywhere",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 423,
+    "favourite": false,
+    "artist": "Cyndi Lauper",
+    "mp3": "Cyndi Lauper - Time After Time.mp3",
+    "title": "Girls Just Want To Have Fun",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 424,
+    "favourite": false,
+    "artist": "A-Ha",
+    "mp3": "a-ha - Take on Me.mp3",
+    "title": "Take On Me",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 425,
+    "favourite": false,
+    "artist": "ABBA",
+    "mp3": "ABBA - Waterloo.mp3",
+    "title": "Waterloo",
+    "tuning": "Drop D"
+  },
+  {
+    "number": 426,
+    "favourite": false,
+    "artist": "Estelle",
+    "mp3": "Estelle; Kanye West - American Boy.mp3",
+    "title": "American Boy",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 427,
+    "favourite": false,
+    "artist": "Beyoncé",
+    "mp3": "Beyoncé; JAY-Z - Crazy In Love (feat. JAY-Z).mp3",
+    "title": "Crazy In Love",
+    "tuning": "E Standard"
+  },
+  {
+    "number": 428,
+    "favourite": false,
+    "artist": "Ed Sheeran",
+    "mp3": "Ed Sheeran - Perfect.mp3",
+    "title": "Perfect",
+    "tuning": "E Standard"
+  }
+]
