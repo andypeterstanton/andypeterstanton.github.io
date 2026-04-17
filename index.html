@@ -1,77 +1,844 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SongSelector</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>New Tab</title>
+        <link rel="icon" type="image/png" href="Icon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            /* =====================================================
+           USER CONFIGURATION (safe to edit)
+         
+           HOW TO EDIT BOOKMARKS
+           -----------------------------------------------------
+           • Each object = one dropdown folder
+           • Folder order = left to right
+           • Set enabled: false to hide a folder
+           • Add/remove links by editing the links array
+           • NO HTML OR CSS CHANGES REQUIRED
+           ===================================================== */
 
-  <body data-theme="dark">
-    <div class="app">
+            /*
+            ========================================================
+            BOOKMARK CONFIGURATION
+            --------------------------------------------------------
+            • Set enabled: true/false to show or hide folders
+            • Comment out individual links if not needed
+            • Add your own links using:
+                { name: "Display Name", url: "https://example.com" }
+            ========================================================
+            */
 
-      <aside class="sidebar">
-        <h1>🎧 SongSelector</h1>
+            const BOOKMARK_FOLDERS = [
+                // ==================================================
+                // SOCIAL & COMMUNITY
+                // ==================================================
+                {
+                    title: "Social",
+                    enabled: true,
+                    links: [
+                        { name: "Facebook", url: "https://www.facebook.com" },
+                        { name: "Instagram", url: "https://www.instagram.com" },
+                        { name: "Reddit", url: "https://reddit.com" },
+                        // { name: "X (Twitter)", url: "https://twitter.com" },
+                        // { name: "LinkedIn", url: "https://linkedin.com" },
+                        // { name: "Discord", url: "https://discord.com/app" },
+                    ],
+                },
 
-        <div id="sidebarSearchSlot"></div>
+                // ==================================================
+                // ENTERTAINMENT
+                // ==================================================
+                {
+                    title: "Entertainment",
+                    enabled: true,
+                    links: [
+                        //  { name: "Netflix", url: "https://www.netflix.com" },
+                        //  { name: "Prime Video", url: "https://www.primevideo.com" },
+                        //  { name: "Disney+", url: "https://www.disneyplus.com" },
+                        //  { name: "Spotify", url: "https://open.spotify.com" },
+                        { name: "BBC iPlayer", url: "https://www.bbc.co.uk/iplayer" },
+                        { name: "Cineby", url: "https://www.cineby.gd" },
+                        { name: "F1", url: "https://www.fullraces.com" },
+                        //  { name: "Twitch", url: "https://www.twitch.tv" },
+                    ],
+                },
 
-        <div class="menu">
-          <button data-action="random">🎲 Random</button>
-          <button data-action="toggleFavs">★ Favourites</button>
-          <button data-action="theme">🌓 Theme</button>
-          <button data-action="reset">↺ Reset</button>
-          <button data-action="addSong">➕ Add Song</button>
-          <button data-action="bulkAdd">📦 Bulk Add</button>
+                // ==================================================
+                // SHOPPING & FINANCE
+                // ==================================================
+                {
+                    title: "Shopping",
+                    enabled: true,
+                    links: [
+                        { name: "Amazon", url: "https://www.amazon.co.uk" },
+                        { name: "eBay", url: "https://www.ebay.co.uk" },
+                        // { name: "PayPal", url: "https://www.paypal.com" },
+                        // { name: "Monzo", url: "https://monzo.com" },
+                        // { name: "eToro", url: "https://www.etoro.com" },
+                    ],
+                },
+
+                // ==================================================
+                // DEVELOPMENT
+                // ==================================================
+                {
+                    title: "Dev",
+                    enabled: true,
+                    links: [
+                        { name: "GitHub", url: "https://github.com" },
+                        { name: "Stack Overflow", url: "https://stackoverflow.com" },
+                        // { name: "MDN Web Docs", url: "https://developer.mozilla.org" },
+                        // { name: "W3Schools", url: "https://www.w3schools.com" },
+                        { name: "CodePen", url: "https://codepen.io" },
+                        { name: "ChatGPT", url: "https://chat.openai.com" },
+                    ],
+                },
+
+                // ==================================================
+                // MUSIC & GUITAR
+                // ==================================================
+                {
+                    title: "Music",
+                    enabled: true,
+                    links: [
+                        { name: "SongSelector2", url: "http://localhost:7999" },
+                        { name: "Ultimate Guitar", url: "https://www.ultimate-guitar.com" },
+                        { name: "Songsterr", url: "https://www.songsterr.com" },
+                        //  { name: "Spotify Web", url: "https://open.spotify.com" },
+                        { name: "SoundCloud", url: "https://soundcloud.com" },
+                    ],
+                },
+
+                // ==================================================
+                // UTILITIES
+                // ==================================================
+                {
+                    title: "Utilities",
+                    enabled: true,
+                    links: [
+                        { name: "Speedtest", url: "https://www.speedtest.net" },
+                        { name: "Can I Use", url: "https://caniuse.com" },
+                        { name: "Down For Everyone", url: "https://downforeveryoneorjustme.com" },
+                        // { name: "TinyURL", url: "https://tinyurl.com" },
+                        // { name: "WeTransfer", url: "https://wetransfer.com" },
+                    ],
+                },
+
+                // ==================================================
+                // NEWS
+                // ==================================================
+                {
+                    title: "News",
+                    enabled: false, // optional
+                    links: [
+                        { name: "BBC News", url: "https://www.bbc.co.uk/news" },
+                        { name: "Reuters", url: "https://www.reuters.com" },
+                        { name: "The Guardian", url: "https://www.theguardian.com" },
+                        { name: "Hacker News", url: "https://news.ycombinator.com" },
+                    ],
+                },
+
+                // ==================================================
+                // GOOGLE ECOSYSTEM
+                // ==================================================
+                {
+                    title: "Google",
+                    enabled: true,
+                    links: [
+                        { name: "Gmail", url: "https://mail.google.com" },
+                        { name: "YouTube", url: "https://www.youtube.com" },
+                        { name: "Drive", url: "https://drive.google.com" },
+                        { name: "Calendar", url: "https://calendar.google.com" },
+                        { name: "Photos", url: "https://photos.google.com" },
+                        { name: "Docs", url: "https://docs.google.com" },
+                        { name: "Sheets", url: "https://sheets.google.com" },
+                        { name: "Slides", url: "https://slides.google.com" },
+                        { name: "Maps", url: "https://maps.google.com" },
+                        { name: "Keep", url: "https://keep.google.com" },
+                    ],
+                },
+            ];
+
+            const WEATHER_CONFIG = {
+                lat: 52.71978,
+                lon: -1.35687,
+                hours: 6,
+            };
+            /* =====================================================
+            SEARCH ENGINE CONFIGURATION
+
+            HOW TO EDIT:
+            -----------------------------------------------------
+            • Each object = one search engine
+            • Set enabled: false to hide it
+            • searchUrl = normal search endpoint
+            • imageUrl = image search endpoint
+            • queryParam = query parameter name
+            • suggestUrl = JSONP suggestion endpoint
+            • suggestParser = function that extracts suggestions
+            ===================================================== */
+
+            const SEARCH_ENGINES = [
+                {
+                    name: "Google",
+                    enabled: true,
+                    searchUrl: "https://www.google.com/search",
+                    imageUrl: "https://www.google.com/search?tbm=isch",
+                    queryParam: "q",
+                    suggestUrl: "https://suggestqueries.google.com/complete/search?client=firefox&q=",
+                    jsonp: true,
+                    suggestParser: (data) => data[1] || [],
+                },
+                {
+                    name: "DuckDuckGo",
+                    enabled: true,
+                    searchUrl: "https://duckduckgo.com/",
+                    imageUrl: "https://duckduckgo.com/?ia=images&iax=images",
+                    queryParam: "q",
+                    jsonp: false, // ❗ no JSONP support
+                },
+                {
+                    name: "Bing",
+                    enabled: true,
+                    searchUrl: "https://www.bing.com/search",
+                    imageUrl: "https://www.bing.com/images/search",
+                    queryParam: "q",
+                    suggestUrl: "https://api.bing.com/osjson.aspx?query=",
+                    jsonp: true,
+                    suggestParser: (data) => data[1] || [],
+                },
+                {
+                    name: "Ecosia",
+                    enabled: true,
+                    searchUrl: "https://www.ecosia.org/search",
+                    imageUrl: "https://www.ecosia.org/images",
+                    queryParam: "q",
+                    jsonp: false, // ❗ no JSONP support
+                },
+            ];
+        </script>
+        <style>
+            /* =====================================================
+            THEME SETTINGS (safe to edit)
+            ===================================================== */
+            :root {
+                --bg: #0f1115;
+                --card: #161a22;
+                --text: #eaeaf0;
+                --muted: #9aa0a6;
+                --accent: #8ab4f8;
+                --border: #232938;
+                --radius: 18px;
+            }
+            /* Global reset / font */
+            * {
+                box-sizing: border-box;
+                font-family:
+                    system-ui,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    sans-serif;
+            }
+            /* =====================
+            Page background
+            ===================== */
+            body {
+                margin: 0;
+                height: 100vh;
+                color: var(--text);
+                display: flex;
+                flex-direction: column;
+                background: linear-gradient(120deg, #0f1115, #151a25, #0f1115);
+                background-size: 400% 400%;
+                animation: gradientMove 20s ease infinite;
+            }
+            @keyframes gradientMove {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            /* =====================
+            Top link menus
+            ===================== */
+            .top-links {
+                display: flex;
+                justify-content: flex-end;
+                padding: 20px 28px;
+                gap: 24px;
+                font-size: 14px;
+            }
+            .menu {
+                position: relative;
+            }
+            .menu-button {
+                background: none;
+                border: none;
+                color: var(--muted);
+                font-size: 14px;
+                cursor: pointer;
+            }
+            .menu-button:hover {
+                color: var(--text);
+            }
+            .dropdown {
+                position: absolute;
+                right: 0;
+                top: 120%;
+                background: var(--card);
+                border: 1px solid var(--border);
+                border-radius: 14px;
+                min-width: 190px;
+                padding: 6px 0;
+                display: none;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+                z-index: 50;
+            }
+            .menu.open .dropdown {
+                display: block;
+            }
+            .dropdown a {
+                display: block;
+                padding: 10px 16px;
+                color: var(--text);
+                text-decoration: none;
+            }
+            .dropdown a:hover {
+                background: rgba(138, 180, 248, 0.15);
+            }
+            /* =====================
+            Center content
+            ===================== */
+            .center {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 32px;
+            }
+            /* Clock */
+            .clock {
+                font-size: 48px;
+                text-align: center;
+                letter-spacing: -1px;
+            }
+            .clock span {
+                display: block;
+                font-size: 15px;
+                color: var(--muted);
+                margin-top: 6px;
+            }
+            /* =====================
+            Weather card
+            ===================== */
+            .weather {
+                position: absolute;
+                top: 28px;
+                left: 28px;
+                width: 300px;
+                display: flex;
+                flex-direction: column; /* key: stack current + hourly vertically */
+                gap: 14px;
+                background: var(--card);
+                border: 1px solid var(--border);
+                border-radius: 16px;
+                padding: 14px 16px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+                font-size: 13px;
+                color: var(--muted);
+            }
+            .weather-now {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+            .weather-now img {
+                width: 42px;
+                height: 42px;
+            }
+            .weather-temp {
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .weather-desc {
+                text-transform: capitalize;
+            }
+            /* Hourly forecast row */
+            .weather-hourly {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                padding-top: 6px;
+            }
+            .hour {
+                text-align: center;
+                min-width: 36px;
+            }
+            .hour img {
+                width: 26px;
+                height: 26px;
+            }
+            .hour span {
+                display: block;
+                font-size: 11px;
+                color: var(--muted);
+            }
+            /* =====================
+            Search box
+            ===================== */
+            .search-wrapper {
+                position: relative;
+                width: min(680px, 90%);
+            }
+            .search-box {
+                background: var(--card);
+                border: 1px solid var(--border);
+                border-radius: var(--radius);
+                display: flex;
+                align-items: center;
+                padding: 14px 20px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            }
+            .search-box:focus-within {
+                border-color: var(--accent);
+                box-shadow:
+                    0 0 0 1px var(--accent),
+                    0 25px 60px rgba(0, 0, 0, 0.6);
+            }
+            .search-box input {
+                flex: 1;
+                background: transparent;
+                border: none;
+                outline: none;
+                color: var(--text);
+                font-size: 18px;
+            }
+            .search-box input::placeholder {
+                color: var(--muted);
+            }
+            .toggle {
+                background: transparent;
+                border: none;
+                font-size: 18px;
+                cursor: pointer;
+                color: var(--muted);
+                margin-left: 10px;
+            }
+            .toggle:hover {
+                color: var(--accent);
+            }
+            /* Autocomplete dropdown */
+            .autocomplete {
+                position: absolute;
+                top: calc(100% + 10px);
+                width: 100%;
+                background: var(--card);
+                border: 1px solid var(--border);
+                border-radius: 14px;
+                box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+                z-index: 20;
+            }
+            .autocomplete div {
+                padding: 14px 20px;
+                cursor: pointer;
+            }
+            .autocomplete div:hover,
+            .autocomplete .active {
+                background: rgba(138, 180, 248, 0.15);
+            }
+            .hint {
+                font-size: 13px;
+                color: var(--muted);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top-links" id="bookmarks"></div>
+        <!-- Weather card -->
+        <div id="weather" class="weather">
+            <div class="weather-now">
+                <img id="weatherIcon" />
+                <div>
+                    <div id="weatherTemp" class="weather-temp"></div>
+                    <div id="weatherDesc" class="weather-desc"></div>
+                </div>
+            </div>
+            <!-- Hourly forecast injected here -->
+            <div id="hourly" class="weather-hourly"></div>
         </div>
-
-        <div class="external-search">
-          <input id="externalSearch" placeholder="Search web for song..." />
-          <div class="ext-buttons">
-            <button id="searchGoogle">Google</button>
-            <button id="searchUG">UG</button>
-          </div>
+        <!-- Center content -->
+        <div class="center">
+            <div id="clock" class="clock"></div>
+            <div class="search-wrapper">
+                <form
+                    id="searchForm"
+                    class="search-box"
+                    action="https://www.google.com/search"
+                    method="GET"
+                    autocomplete="off"
+                >
+                    <input id="searchInput" name="q" autofocus placeholder="Search Google…" />
+                    <button type="button" id="engineToggle" class="toggle">G</button>
+                    <button type="button" id="searchToggle" class="toggle">🔍</button>
+                </form>
+                <div id="autocomplete" class="autocomplete" hidden></div>
+            </div>
+            <div class="hint">Press Enter to search</div>
         </div>
+        <script>
+            /* =====================
+            Clock
+            ===================== */
+            function updateClock() {
+                const now = new Date();
+                const time = now.toLocaleTimeString([], {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                });
+                const date = now.toLocaleDateString([], {
+                    weekday: "long",
+                    month: "long",
+                    day: "numeric",
+                });
+                document.getElementById("clock").innerHTML = `${time}<span>${date}</span>`;
+            }
 
-      </aside>
+            updateClock();
+            setInterval(updateClock, 1000);
 
-      <main class="main">
-  <div class="topbar">
-    <div id="searchWrapper">
-      <input
-        id="search"
-        type="search"
-        placeholder="Search artist, title, tuning..."
-      />
-    </div>
-  </div>
+            /* =====================
+            Weather (Open-Meteo)
+            ===================== */
+            async function loadWeather() {
+                const { lat, lon, hours } = WEATHER_CONFIG;
 
-  <div id="songTable">
-    <div class="song-grid">
-      <div id="songContainer"></div>
-    </div>
-  </div>
-</main>
+                const res = await fetch(
+                    `https://api.open-meteo.com/v1/forecast` +
+                        `?latitude=${lat}&longitude=${lon}` +
+                        `&current_weather=true` +
+                        `&hourly=temperature_2m,weathercode` +
+                        `&timezone=auto`
+                );
 
-    <div class="player">
-      <div class="now">
-        <div id="nowPlaying">Nothing playing</div>
-      </div>
-      <audio id="audio" controls preload="none"></audio>
-    </div>
+                const data = await res.json();
 
-    <div class="modal hidden" id="modal">
-  <div class="modal-content">
-    <h2 id="modalTitle">Add Song</h2>
-    <div id="modalBody"></div>
-    <div class="modal-actions">
-      <button id="modalDelete" class="btn-danger hidden">Delete</button>
-      <button id="modalSave">Save</button>
-      <button id="modalCancel">Cancel</button>
-    </div>
-  </div>
-</div>
+                /* Current weather */
+                document.getElementById("weatherTemp").textContent =
+                    Math.round(data.current_weather.temperature) + "°C";
 
-    <script src="app.js"></script>
-  </body>
+                document.getElementById("weatherDesc").textContent = weatherDescription(
+                    data.current_weather.weathercode
+                );
+
+                document.getElementById("weatherIcon").src = weatherIconUrl(data.current_weather.weathercode);
+
+                /* Hourly forecast: next 6 full hours */
+                const hourlyEl = document.getElementById("hourly");
+                hourlyEl.innerHTML = "";
+
+                const now = new Date();
+                const currentHour = now.toISOString().slice(0, 13);
+                const startIndex = data.hourly.time.findIndex((t) => t.startsWith(currentHour));
+
+                for (let i = startIndex + 1; i <= startIndex + hours; i++) {
+                    const hourTime = new Date(data.hourly.time[i]);
+                    const label = hourTime.toLocaleTimeString([], {
+                        hour: "2-digit",
+                        minute: "2-digit",
+                    });
+
+                    const div = document.createElement("div");
+                    div.className = "hour";
+                    div.innerHTML = `
+             <span>${label}</span>
+             <img src="${weatherIconUrl(data.hourly.weathercode[i])}">
+             <strong>${Math.round(data.hourly.temperature_2m[i])}°</strong>
+           `;
+                    hourlyEl.appendChild(div);
+                }
+            }
+
+            loadWeather();
+
+            /* Weather helpers */
+            function weatherIconUrl(code) {
+                if (code === 0) return "https://openweathermap.org/img/wn/01d.png";
+                if ([1, 2].includes(code)) return "https://openweathermap.org/img/wn/02d.png";
+                if (code === 3) return "https://openweathermap.org/img/wn/03d.png";
+                if (code >= 45 && code <= 48) return "https://openweathermap.org/img/wn/50d.png";
+                if (code >= 51 && code <= 67) return "https://openweathermap.org/img/wn/09d.png";
+                if (code >= 71 && code <= 77) return "https://openweathermap.org/img/wn/13d.png";
+                if (code >= 80 && code <= 82) return "https://openweathermap.org/img/wn/10d.png";
+                if (code >= 95) return "https://openweathermap.org/img/wn/11d.png";
+                return "https://openweathermap.org/img/wn/01d.png";
+            }
+
+            function weatherDescription(code) {
+                const map = {
+                    0: "Clear",
+                    1: "Mostly clear",
+                    2: "Partly cloudy",
+                    3: "Overcast",
+                    45: "Fog",
+                    51: "Light rain",
+                    61: "Rain",
+                    71: "Snow",
+                    80: "Showers",
+                    95: "Thunderstorm",
+                };
+                return map[code] || "Weather";
+            }
+
+            /* =====================
+             Search mode toggle
+            ===================== */
+            const form = document.getElementById("searchForm");
+            const input = document.getElementById("searchInput");
+            const engineToggle = document.getElementById("engineToggle");
+            const searchToggle = document.getElementById("searchToggle");
+
+            let imageMode = false;
+            const ENABLED_ENGINES = SEARCH_ENGINES.filter((e) => e.enabled !== false);
+
+            let currentEngineIndex = 0;
+            let currentEngine = ENABLED_ENGINES[currentEngineIndex];
+
+            // Update form action and placeholder
+            function updateFormAction() {
+                if (imageMode) {
+                    // Special handling per engine
+                    if (currentEngine.name === "Google") {
+                        form.action = currentEngine.searchUrl;
+                    } else if (currentEngine.name === "DuckDuckGo") {
+                        form.action = currentEngine.searchUrl;
+                    } else {
+                        form.action = currentEngine.imageUrl;
+                    }
+                } else {
+                    form.action = currentEngine.searchUrl;
+                }
+
+                input.name = currentEngine.queryParam;
+
+                input.placeholder = imageMode
+                    ? `Search ${currentEngine.name} Images…`
+                    : `Search ${currentEngine.name}…`;
+
+                searchToggle.textContent = imageMode ? "🖼️" : "🔍";
+            }
+
+            // Toggle between search and image mode
+            searchToggle.onclick = () => {
+                imageMode = !imageMode;
+                updateFormAction();
+            };
+
+            // Cycle through search engines
+            engineToggle.onclick = () => {
+                currentEngineIndex = (currentEngineIndex + 1) % ENABLED_ENGINES.length;
+
+                currentEngine = ENABLED_ENGINES[currentEngineIndex];
+
+                updateFormAction();
+                engineToggle.textContent = currentEngine.name[0];
+            };
+
+            // Initialise
+            updateFormAction();
+            engineToggle.textContent = currentEngine.name[0];
+
+            /* =====================
+           Autocomplete
+           ===================== */
+            const box = document.getElementById("autocomplete");
+            let activeIndex = -1;
+
+            function parseSuggestions(engine, data) {
+                switch (engine.id) {
+                    case "google":
+                    case "bing":
+                        return Array.isArray(data[1]) ? data[1] : [];
+
+                    case "ddg":
+                        return Array.isArray(data) ? data.map((item) => item.phrase) : [];
+
+                    default:
+                        return [];
+                }
+            }
+
+            window.engineSuggestionCallback = (data) => {
+                const suggestions = currentEngine.suggestParser(data).slice(0, 8);
+
+                box.innerHTML = "";
+                activeIndex = -1;
+
+                suggestions.forEach((text) => {
+                    const div = document.createElement("div");
+                    div.textContent = text;
+                    div.onclick = () => {
+                        input.value = text;
+                        input.form.submit();
+                    };
+                    box.appendChild(div);
+                });
+
+                box.hidden = suggestions.length === 0;
+            };
+
+            input.addEventListener("input", () => {
+                if (!input.value.trim()) {
+                    box.hidden = true;
+                    return;
+                }
+
+                // If engine doesn't support JSONP, disable suggestions
+                if (!currentEngine.jsonp) {
+                    box.hidden = true;
+                    return;
+                }
+
+                document.getElementById("jsonp")?.remove();
+
+                const script = document.createElement("script");
+                script.id = "jsonp";
+                script.src =
+                    currentEngine.suggestUrl + encodeURIComponent(input.value) + "&callback=engineSuggestionCallback";
+
+                document.body.appendChild(script);
+            });
+
+            input.addEventListener("keydown", (e) => {
+                const items = box.querySelectorAll("div");
+                if (!items.length) return;
+
+                if (e.key === "ArrowDown") {
+                    e.preventDefault();
+                    activeIndex = (activeIndex + 1) % items.length;
+                }
+
+                if (e.key === "ArrowUp") {
+                    e.preventDefault();
+                    activeIndex = (activeIndex - 1 + items.length) % items.length;
+                }
+
+                // Accept suggestion for editing (Google-style)
+                if ((e.key === "ArrowLeft" || e.key === "ArrowRight") && activeIndex >= 0) {
+                    e.preventDefault();
+
+                    input.value = items[activeIndex].textContent;
+
+                    // Move cursor to end
+                    requestAnimationFrame(() => {
+                        input.setSelectionRange(input.value.length, input.value.length);
+                    });
+
+                    box.hidden = true;
+                    activeIndex = -1;
+                    return;
+                }
+
+                // Submit highlighted suggestion
+                if (e.key === "Enter" && activeIndex >= 0) {
+                    e.preventDefault();
+                    input.value = items[activeIndex].textContent;
+                    input.form.submit();
+                }
+
+                items.forEach((el) => el.classList.remove("active"));
+                items[activeIndex]?.classList.add("active");
+            });
+
+            document.addEventListener("click", (e) => {
+                if (!box.contains(e.target) && e.target !== input) box.hidden = true;
+            });
+
+            /* =====================
+           Build bookmark menus
+           ===================== */
+            const bookmarksEl = document.getElementById("bookmarks");
+
+            BOOKMARK_FOLDERS.filter((folder) => folder.enabled !== false).forEach((folder) => {
+                const menu = document.createElement("div");
+                menu.className = "menu";
+
+                const button = document.createElement("button");
+                button.className = "menu-button";
+                button.textContent = folder.title + " ▾";
+
+                const dropdown = document.createElement("div");
+                dropdown.className = "dropdown";
+
+                folder.links.forEach((link) => {
+                    const a = document.createElement("a");
+                    a.href = link.url;
+                    a.textContent = link.name;
+                    dropdown.appendChild(a);
+                });
+
+                menu.appendChild(button);
+                menu.appendChild(dropdown);
+                bookmarksEl.appendChild(menu);
+            });
+
+            /* =====================
+          Dropdown menus
+          ===================== */
+            document.querySelectorAll(".menu-button").forEach((button) => {
+                button.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    const menu = button.parentElement;
+
+                    document.querySelectorAll(".menu").forEach((m) => {
+                        if (m !== menu) m.classList.remove("open");
+                    });
+
+                    menu.classList.toggle("open");
+                });
+            });
+
+            document.addEventListener("click", () => {
+                document.querySelectorAll(".menu").forEach((m) => m.classList.remove("open"));
+            });
+
+            /* =====================
+          Smart URL detection
+          ===================== */
+            form.addEventListener("submit", (e) => {
+                const value = input.value.trim();
+
+                const isURL = value.includes(".") && !value.includes(" ") && !value.startsWith("?");
+
+                if (isURL) {
+                    e.preventDefault();
+                    const url =
+                        value.startsWith("http://") || value.startsWith("https://") ? value : "https://" + value;
+
+                    window.location.href = url;
+                    return;
+                }
+
+                // Handle special image parameters
+                if (imageMode) {
+                    if (currentEngine.name === "Google") {
+                        e.preventDefault();
+                        window.location.href =
+                            currentEngine.searchUrl + "?q=" + encodeURIComponent(value) + "&tbm=isch";
+                    } else if (currentEngine.name === "DuckDuckGo") {
+                        e.preventDefault();
+                        window.location.href =
+                            currentEngine.searchUrl + "?q=" + encodeURIComponent(value) + "&ia=images&iax=images";
+                    }
+                }
+            });
+        </script>
+    </body>
 </html>
